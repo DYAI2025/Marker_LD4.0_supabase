@@ -206,11 +206,11 @@ def clean_tags(tags: List[str]) -> List[str]:
     if not tags or not isinstance(tags, list):
         return tags
 
-    clean = []
-    for tag in tags:
-        if isinstance(tag, str) and not contains_forbidden(tag):
-            clean.append(tag)
-    return clean
+    return [
+        tag
+        for tag in tags
+        if isinstance(tag, str) and not contains_forbidden(tag)
+    ]
 
 
 # ============================================================================
