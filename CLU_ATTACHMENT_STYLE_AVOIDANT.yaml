@@ -1,14 +1,13 @@
 id: CLU_ATTACHMENT_STYLE_AVOIDANT
 lang: de
 category: CLUSTER
-description: 'Vermeidendes Bindungsmuster: Überbetonung von Autarkie, Minimierung
-  von Gefühlen, Rückzug statt Dialog.'
+description: Conversation-Exit Move
 frame:
   signal:
   - '''alleine klargekommen'''
   - Gefühle = Schwäche
   - Rückzug statt Austausch
-  concept: Vermeidende Bindungsdynamik
+  concept: Vermeidende-Feature
   pragmatics: Distanz, Selbstgenügsamkeits-Frame
   narrative: Selbstschutz über Autonomie
 composed_of:
@@ -26,5 +25,3 @@ examples:
 tags:
 - needs_review
 - cluster
-- attachment
-- avoidant

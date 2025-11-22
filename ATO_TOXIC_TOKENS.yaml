@@ -1,20 +1,22 @@
 id: ATO_TOXIC_TOKENS
-version: "3.4"
+version: '3.4'
 frame:
-  signal: [ "toxicity", "violence" ]
-  concept: "Toxische Sprachmarker (SAE Latent #10)"
-  pragmatics: "Oberflächensignale für Persona-Aktivierung"
-  narrative: "evidence"
+  signal:
+  - toxicity
+  - violence
+  concept: Sprachmarker-Feature
+  pragmatics: Oberflächensignale für Persona-Aktivierung
+  narrative: evidence
 activation:
-  rule: "REGEX: (?i)\\b(killing|executions|assault|attack|destroy|eliminate)\\b"
+  rule: 'REGEX: (?i)\b(killing|executions|assault|attack|destroy|eliminate)\b'
 examples:
-- "killing"
-- "executions"
-- "assault"
-- "attack the process"
-- "destroy the lock"
-- "eliminate all resistance"
-- "destroy the system"
-- "assault vector"
-- "attack surface"
-- "eliminate threat"
+- killing
+- executions
+- assault
+- attack the process
+- destroy the lock
+- eliminate all resistance
+- destroy the system
+- assault vector
+- attack surface
+- eliminate threat

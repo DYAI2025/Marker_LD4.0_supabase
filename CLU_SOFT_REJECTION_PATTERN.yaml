@@ -3,7 +3,7 @@ frame:
   signal:
   - Wiederholte Vermeidungsmuster
   concept: Systematische Distanzierung
-  pragmatics: Konfliktvermeidung
+  pragmatics: Conversation-Feature
   narrative: ghosting_muster
 composed_of:
 - SEM_STRESS_EXCUSE
@@ -28,5 +28,4 @@ examples:
 - Consistent pattern of avoiding commitment while maintaining plausible deniability
 tags:
 - rejection
-- avoidance
 - ghosting

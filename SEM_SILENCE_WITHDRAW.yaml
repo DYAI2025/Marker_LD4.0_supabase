@@ -1,7 +1,7 @@
 id: SEM_SILENCE_WITHDRAWAL
 lang: en
 category: SEMANTIC
-description: 'Communicative withdrawal markers: silence/avoidance.'
+description: Communicative-Feature
 frame:
   signal:
   - …

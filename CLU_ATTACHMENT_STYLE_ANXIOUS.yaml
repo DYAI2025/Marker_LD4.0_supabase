@@ -4,7 +4,7 @@ frame:
   signal:
   - ängstliche Bindungshinweise
   - Unsicherheits- und Verlassensangst-Sprache
-  concept: 'Bindungsstil: ängstlich'
+  concept: Proximity-Seeking Pattern
   pragmatics: Nähe-Suche bei gleichzeitiger Alarmierung
   narrative: Sehnsucht und Sorge
 composed_of:
@@ -21,6 +21,5 @@ examples:
 tags:
 - needs_review
 - cluster
-- attachment
 - anxious
 meta: null

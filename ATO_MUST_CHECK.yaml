@@ -6,7 +6,7 @@ frame:
   - kann noch nichts sagen
   - weiß nicht
   concept: Temporale Unverbindlichkeit
-  pragmatics: Vermeidungsstrategie
+  pragmatics: Conversation-Feature
   narrative: temporal_vagueness
 pattern:
 - (?i)\bmuss\s+(ich\s+)?(mal\s+|erst\s*mal\s+)?schauen\b
@@ -21,4 +21,3 @@ examples:
 - Muss erstmal schauen, wie die Woche wird
 tags:
 - temporal_vagueness
-- avoidance

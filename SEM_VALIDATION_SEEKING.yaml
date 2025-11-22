@@ -2,11 +2,11 @@ id: SEM_VALIDATION_SEEKING
 schema_version: LD-3.3
 lang: en
 category: SEMANTIC
-description: Semantic pattern for validation seeking behavior
+description: Semantic-Feature
 frame:
   signal:
   - approval seeking
-  concept: Validation Seeking
+  concept: Seeking-Feature
   pragmatics: micro pattern recognition
   narrative: intent
 composed_of:
@@ -22,4 +22,3 @@ examples:
 tags:
 - semantic
 - v3.3
-- validation

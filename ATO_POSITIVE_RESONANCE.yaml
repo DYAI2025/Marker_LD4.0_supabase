@@ -5,8 +5,8 @@ frame:
   - Wow, das geht mir genauso
   - Wir sind auf derselben Wellenlänge
   concept: Empathie
-  pragmatics: Validierung
-  narrative: Resonanz
+  pragmatics: Conversation-Feature
+  narrative: Turn-Alignment
 pattern:
 - (?i)\bverstehe dich vollkommen\b
 - (?i)\bgeht mir genauso\b
@@ -26,4 +26,3 @@ examples:
 - Das resoniert total mit mir.
 tags:
 - empathy
-- validation

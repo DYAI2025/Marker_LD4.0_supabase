@@ -1,7 +1,7 @@
 id: ATO_VALIDATION_THERAPIST
 version: '3.4'
 category: ATOMIC
-description: Marker für Validierung durch den Therapeuten
+description: Marker-Feature
 frame:
   signal:
   - explicit validation/normalization
@@ -23,5 +23,4 @@ examples:
 tags:
 - atomic
 - therapist_move
-- validation
 - safety

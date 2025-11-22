@@ -4,7 +4,7 @@ frame:
   - brauche Abstand
   - muss allein
   - keine Zeit
-  concept: Vermeidende Bindung
+  concept: Vermeidende-Feature
   pragmatics: Distanz schaffen
   narrative: withdrawal
 pattern:
@@ -12,5 +12,4 @@ pattern:
 examples:
   positive: []
   negative: []
-tags:
-- attachment
+tags: []

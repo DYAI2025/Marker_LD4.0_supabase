@@ -6,7 +6,7 @@ frame:
   - Hilflosigkeit + Abhängigkeit
   concept: Ohne dich geht es nicht
   pragmatics: Caregiver-Zwang
-  narrative: neediness
+  narrative: Conversation-Feature
 pattern:
 - (?i)\b(ohne dich (schaffe|kann) ich das nicht|ich kann das nicht allein|ohne dich
   geht es nicht|ich schaffe das nicht)\b
@@ -24,4 +24,3 @@ examples:
   negative: []
 tags:
 - ato
-- neediness

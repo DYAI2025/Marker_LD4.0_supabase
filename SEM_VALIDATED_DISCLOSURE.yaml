@@ -1,7 +1,7 @@
 id: SEM_VALIDATED_DISCLOSURE
 version: '3.4'
 category: SEMANTIC
-description: Validierung gefolgt von Selbstoffenbarung
+description: Gefolgt-Feature
 frame:
   signal:
   - validation followed by disclosure

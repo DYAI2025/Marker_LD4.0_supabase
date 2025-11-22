@@ -2,7 +2,7 @@ id: SEM_POSITIVE_FUTURE
 frame:
   signal:
   - Wertschätzung + Wiederholungswunsch
-  concept: Verbindungsaufbau
+  concept: Conversation-Feature
   pragmatics: Relationship building
   narrative: connection_desire
 composed_of:

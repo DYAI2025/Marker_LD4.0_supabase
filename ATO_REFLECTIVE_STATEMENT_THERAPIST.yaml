@@ -7,7 +7,7 @@ frame:
   - you-statement paraphrase
   - mirroring content/affect
   concept: reflection of meaning/feeling
-  pragmatics: validation & alignment
+  pragmatics: Alignment-Feature
   narrative: mirror
 pattern:
 - (?i)es klingt, als ob|it sounds like
@@ -25,4 +25,3 @@ tags:
 - atomic
 - therapist_move
 - reflection
-- validation

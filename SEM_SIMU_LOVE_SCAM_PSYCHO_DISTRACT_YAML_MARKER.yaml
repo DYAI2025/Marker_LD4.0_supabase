@@ -7,8 +7,8 @@ frame:
   - accelerated intimacy
   - emotional flooding
   concept: psychological distraction
-  pragmatics: emotional manipulation
-  narrative: trauma bonding
+  pragmatics: Emotional-Feature
+  narrative: Bonding-Feature
 composed_of:
 - ATO_PLACEHOLDER
 activation:
@@ -65,4 +65,3 @@ examples:
 tags:
 - love_scam
 - psy_distract
-- trauma_bond

@@ -1,14 +1,13 @@
 id: CLU_ATTACHMENT_STYLE_SECURE
 lang: de
 category: CLUSTER
-description: 'Sichere Bindung: verlässliche Fürsorge, offene Kommunikation, ''Fehler
-  sind okay'', konsistent im Zeitfenster.'
+description: Sichere-Feature
 frame:
   signal:
   - Geborgenheit
   - offen reden
   - Fehler sind okay
-  concept: Sichere Bindung
+  concept: Sichere-Feature
   pragmatics: Vertrauen, Reparaturfähigkeit
   narrative: Stabile Beziehungserfahrungen
 composed_of:
@@ -27,5 +26,4 @@ examples:
 tags:
 - needs_review
 - cluster
-- attachment
 - secure

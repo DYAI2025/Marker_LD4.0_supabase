@@ -1,11 +1,11 @@
 id: CLU_AVOIDED_DISCLOSURE
 version: '3.4'
 category: CLUSTER
-description: Systematische Vermeidung von Aussagen
+description: Systematische-Feature
 frame:
   signal:
   - start + downplay + silence repeats
-  concept: systematic avoidance of saying
+  concept: Systematic-Feature
   pragmatics: blocked engagement
   narrative: retreat loop
 composed_of:
@@ -24,6 +24,5 @@ examples:
   negative: []
 tags:
 - cluster
-- avoidance
 - inhibition
 - disclosure_block

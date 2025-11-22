@@ -6,7 +6,7 @@ frame:
   signal:
   - Gefühl des Gegenübers explizit spiegeln/anerkennen
   - Druck rausnehmen, Sicherheit geben
-  concept: Validierung von Emotion
+  concept: Von-Feature
   pragmatics: Deeskalation durch Anerkennung
   narrative: Verbundenheit trotz Konflikt
 pattern:
@@ -19,7 +19,6 @@ examples:
   positive: []
   negative: []
 tags:
-- validation
 - empathy
 - deescalation
 - semantics

@@ -3,7 +3,7 @@ frame:
   signal:
   - Schuldzuweisungsausdrücke
   concept: Verantwortungsabwälzungsmuster
-  pragmatics: Systematische Schuldvermeidung
+  pragmatics: Systematische-Feature
   narrative: abwälzen
 composed_of:
 - ATO_BLAME_SHIFT_MARKER
@@ -18,6 +18,5 @@ examples:
 - Wenn du pünktlicher wärst, hätten wir diese Diskussion nicht.
 - Du hast mich dazu gebracht, so zu reagieren.
 tags:
-- schuld
 - abwälzung
 - verantwortung

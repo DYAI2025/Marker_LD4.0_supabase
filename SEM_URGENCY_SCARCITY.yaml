@@ -6,7 +6,7 @@ frame:
   - sofortige Entscheidung
   - Frist
   concept: Scarcity, Dringlichkeit
-  pragmatics: Manipulation durch Stress und Zeitdruck
+  pragmatics: Durch-Feature
   narrative: Impulssteuerung, Stress-Induktion, kognitive Verzerrung
 activation:
   rule: ANY 1
@@ -40,7 +40,6 @@ examples:
 tags:
 - urgency
 - scarcity
-- manipulation
 - zeitdruck
 composed_of:
 - ATO_PLACEHOLDER

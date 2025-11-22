@@ -7,7 +7,7 @@ frame:
   - one-word or silent reply
   - nonverbal withdrawal
   concept: withdrawal instead of engagement
-  pragmatics: conflict avoidance / tension cue
+  pragmatics: Conflict-Feature
   narrative: retreat
 pattern:
 - ^\.{3}$

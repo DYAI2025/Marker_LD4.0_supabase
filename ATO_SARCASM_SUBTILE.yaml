@@ -8,7 +8,7 @@ frame:
   - ganz im ernst
   concept: subtiler Sarkasmus
   pragmatics: ironische Kritik
-  narrative: versteckte Anschuldigung
+  narrative: Versteckte-Feature
 pattern:
 - (?i)\boh, großartig\b
 - (?i)\bja klar\b

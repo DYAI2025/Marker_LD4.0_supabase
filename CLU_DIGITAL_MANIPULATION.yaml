@@ -5,7 +5,7 @@ frame:
   - Verschleierung
   - Emotionalisierung
   - Verifikation vermeiden
-  concept: digitale Manipulation
+  concept: Digitale-Feature
   pragmatics: Täuschungs- und Steuerungsstrategien
   narrative: Nähe, Druck und Unschärfe
 composed_of:
@@ -28,7 +28,6 @@ examples:
 - Sorry, Kamera defekt, aber vertrau mir bitte.
 - Pass auf, wir beide gegen den Rest der Welt, okay?
 tags:
-- manipulation
 - scam
 - digital
 - deception
