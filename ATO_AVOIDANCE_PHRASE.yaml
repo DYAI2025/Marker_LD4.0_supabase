@@ -4,8 +4,8 @@ frame:
   - ausweichende Antwort
   - Themenwechsel
   - unklare Haltung
-  concept: Konfliktvermeidung
-  pragmatics: Vermeidung von Auseinandersetzung
+  concept: Conversation-Feature
+  pragmatics: Von-Feature
   narrative: indirekte Kommunikation
 pattern:
 - (?i)vielleicht.*morgen
@@ -21,5 +21,4 @@ examples:
 - Ich bin mir nicht sicher, ob wir das jetzt klären sollten.
 - Können wir das ein andermal besprechen?
 - Lass uns das lieber ruhen lassen.
-tags:
-- avoidance
+tags: []

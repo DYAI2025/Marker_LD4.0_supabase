@@ -7,7 +7,7 @@ frame:
   - nicht so einfach
   concept: Überforderungssignal
   pragmatics: Soft-Ablehnung
-  narrative: overwhelm
+  narrative: Conversation-Feature
 pattern:
 - (?i)\buff\b
 - (?i)\bist\s+(echt\s+)?schwierig\b
@@ -20,5 +20,4 @@ examples:
 - Puh, schwierig schwierig...
 - Uff, muss ich erstmal schauen
 tags:
-- avoidance
 - affect_marker

@@ -4,9 +4,9 @@ lang: de
 frame:
   signal:
   - Schuldappell + Abhängigkeit
-  concept: Guilt-Appeal (Neediness)
+  concept: Appeal-Feature
   pragmatics: Nähe erzwingen
-  narrative: guilt_neediness_bind
+  narrative: Bind-Feature
 composed_of:
 - ATO_GUILT_APPEAL_SUPPORT
 - ATO_HELPLESSNESS_DEPENDENCY
@@ -24,5 +24,3 @@ examples:
   negative: []
 tags:
 - sem
-- guilt
-- neediness

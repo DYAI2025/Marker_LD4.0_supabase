@@ -6,7 +6,7 @@ frame:
   - hättest du nicht
   - du hast mich dazu gebracht
   - ich kann nichts dafür
-  concept: Schuldumkehr
+  concept: Conversation-Feature
   pragmatics: Verantwortungsverlagerung
   narrative: emotionale Kontrolle
 composed_of:
@@ -20,5 +20,4 @@ examples:
   positive: []
   negative: []
 tags:
-- guilt_framing
 - blame

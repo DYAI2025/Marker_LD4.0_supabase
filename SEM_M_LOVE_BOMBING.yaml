@@ -5,8 +5,8 @@ frame:
   - Du bist das Wichtigste in meinem Leben
   - Ohne dich bin ich nichts
   concept: Love Bombing
-  pragmatics: Manipulative Bindung
-  narrative: overwhelm
+  pragmatics: Conversation-Feature
+  narrative: Conversation-Feature
 activation:
   rule: ANY 1
 scoring:
@@ -23,7 +23,6 @@ examples:
 - Selten jemanden mit soviel Verstand und Schönheit in einem gesehen.
 - Ich könnte stundenlang an deinen Lippen hänkungen.
 tags:
-- manipulation
 - love_bombing
 composed_of:
 - ATO_PLACEHOLDER

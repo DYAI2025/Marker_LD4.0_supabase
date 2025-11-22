@@ -4,7 +4,7 @@ frame:
   - vertraue dir
   - fühle mich sicher
   - kann mich öffnen
-  concept: Sichere Bindung
+  concept: Sichere-Feature
   pragmatics: Vertrauen zeigen
   narrative: trust
 pattern:
@@ -17,5 +17,4 @@ examples:
 - Wir hatten sonntags Familienfrühstück, das war mir heilig.
 - 'Ich wusste: Selbst wenn ich Mist baue, lieben sie mich.'
 - Ich durfte Fehler machen und wurde trotzdem ermutigt.
-tags:
-- attachment
+tags: []

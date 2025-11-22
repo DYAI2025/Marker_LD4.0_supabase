@@ -6,9 +6,9 @@ frame:
   - Zwickmühlen
   - Verschleierung
   - überwältigende Zuwendung
-  concept: psychologische Digitalmanipulation
+  concept: Psychologische-Feature
   pragmatics: Täuschung und emotionale Steuerung
-  narrative: strategische Destabilisierung
+  narrative: Fluency/Complexity
 composed_of:
 - ATO_PLACEHOLDER
 activation:
@@ -29,7 +29,6 @@ examples:
 - Wenn du mich wirklich lieben würdest, würdest du alles für mich tun.
 - Ich kann nichts dafür, wenn du immer alles so dramatisierst!
 tags:
-- manipulation
 - psychological
 - digital
 - scam

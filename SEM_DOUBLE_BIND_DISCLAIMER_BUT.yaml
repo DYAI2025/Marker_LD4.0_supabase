@@ -6,7 +6,7 @@ frame:
   - Disclaimer direkt gefolgt von Kontrast-Knick
   concept: Doppelbotschaft (Disclaimer→aber)
   pragmatics: Weich + Belastung
-  narrative: guilt_neediness_bind
+  narrative: Bind-Feature
 composed_of:
 - ATO_DISCLAIMER_NOT_BURDEN
 - ATO_CONTRASTIVE_CONNECTOR_ABER
@@ -25,4 +25,3 @@ examples:
 tags:
 - sem
 - double_bind
-- guilt_pressure

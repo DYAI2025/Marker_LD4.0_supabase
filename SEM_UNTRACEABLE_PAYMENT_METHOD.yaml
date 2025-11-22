@@ -6,7 +6,7 @@ frame:
   - Kryptowährung
   - Bargeldtransfers
   concept: Nicht rückverfolgbare Zahlungswege
-  pragmatics: Verschleierung, Betrug, Strafverfolgungsvermeidung
+  pragmatics: Verschleierung-Feature
   narrative: Verschleierte Geldflüsse durch alternative Zahlungsmethoden
 activation:
   rule: ANY 1

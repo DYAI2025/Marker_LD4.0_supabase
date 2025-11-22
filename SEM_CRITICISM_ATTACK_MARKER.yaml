@@ -1,14 +1,12 @@
 id: SEM_CRITICISM_PERSONAL_ATTACK
 lang: de
 category: SEMANTIC
-description: Erfasst Ad-hominem-Kritik, die den Charakter oder die Persönlichkeit
-  einer Person angreift, anstatt sich auf ein spezifisches Verhalten zu beziehen.
-  Folgt Gottman's Konzept der 'Criticism'.
+description: Critique-Pattern
 frame:
   signal:
   - Kombination aus direkter Anschuldigung (z.B. 'Du bist...') und einer generalisierenden,
     negativen Charaktereigenschaft.
-  concept: 'Persönlicher Angriff (Gottman: Criticism)'
+  concept: Critique-Pattern
   pragmatics: Eskalationspotenzial, dient der Abwertung des Gegenübers, verhindert
     konstruktive Konfliktlösung.
   narrative: accusation / character assassination

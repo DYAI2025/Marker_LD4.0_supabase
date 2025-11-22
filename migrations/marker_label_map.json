@@ -1,0 +1,2450 @@
+[
+  {
+    "file": "ATO_AVOIDANCE_PHRASE.yaml",
+    "id": "ATO_AVOIDANCE_PHRASE",
+    "old": {
+      "id": "ATO_AVOIDANCE_PHRASE",
+      "frame": {
+        "signal": [
+          "ausweichende Antwort",
+          "Themenwechsel",
+          "unklare Haltung"
+        ],
+        "concept": "Konfliktvermeidung",
+        "pragmatics": "Vermeidung von Auseinandersetzung",
+        "narrative": "indirekte Kommunikation"
+      },
+      "pattern": [
+        "(?i)vielleicht.*morgen",
+        "(?i)Thema.*wechseln",
+        "(?i)bin mir nicht sicher",
+        "(?i)besprechen.*andermal",
+        "(?i)das lieber ruhen lassen"
+      ],
+      "activation": {
+        "rule": "ANY 1"
+      },
+      "examples": [
+        "Vielleicht sprechen wir morgen darüber.",
+        "Lass uns das Thema wechseln, wenn dir das Recht ist.",
+        "Ich bin mir nicht sicher, ob wir das jetzt klären sollten.",
+        "Können wir das ein andermal besprechen?",
+        "Lass uns das lieber ruhen lassen."
+      ],
+      "tags": []
+    },
+    "new": {
+      "id": "ATO_AVOIDANCE_PHRASE",
+      "frame": {
+        "signal": [
+          "ausweichende Antwort",
+          "Themenwechsel",
+          "unklare Haltung"
+        ],
+        "concept": "Conversation-Feature",
+        "pragmatics": "Von-Feature",
+        "narrative": "indirekte Kommunikation"
+      },
+      "pattern": [
+        "(?i)vielleicht.*morgen",
+        "(?i)Thema.*wechseln",
+        "(?i)bin mir nicht sicher",
+        "(?i)besprechen.*andermal",
+        "(?i)das lieber ruhen lassen"
+      ],
+      "activation": {
+        "rule": "ANY 1"
+      },
+      "examples": [
+        "Vielleicht sprechen wir morgen darüber.",
+        "Lass uns das Thema wechseln, wenn dir das Recht ist.",
+        "Ich bin mir nicht sicher, ob wir das jetzt klären sollten.",
+        "Können wir das ein andermal besprechen?",
+        "Lass uns das lieber ruhen lassen."
+      ],
+      "tags": []
+    },
+    "needs_manual_review": true
+  },
+  {
+    "file": "ATO_DEFENSIVE_JUSTIFICATION_MARKER.yaml",
+    "id": "ATO_DEFENSIVE_JUSTIFICATION",
+    "old": {
+      "id": "ATO_DEFENSIVE_JUSTIFICATION",
+      "lang": "de",
+      "description": "Atomic-Feature",
+      "frame": {
+        "signal": [
+          "Ich wollte doch nur helfen.",
+          "Ich hab es doch nur gut gemeint mit dir.",
+          "Das war wirklich nicht meine Absicht, dich zu verletzen.",
+          "Ich dachte, ich helfe damit, die Situation zu lösen."
+        ],
+        "concept": "Defensive Rechtfertigung",
+        "pragmatics": "Vermeidung-Feature",
+        "narrative": "Selbstverteidigung im Gespräch"
+      },
+      "pattern": [
+        "Ich wollte( doch)? nur helfen\\.",
+        "Ich hab(?:e)? es doch nur gut gemeint(?: mit dir)?\\.",
+        "Das war wirklich nicht meine Absicht,.*",
+        "Ich dachte, ich helfe damit.*"
+      ],
+      "activation_logic": "ANY 1",
+      "examples": [
+        "Ich wollte doch nur helfen.",
+        "Ich hab es doch nur gut gemeint mit dir.",
+        "Das war wirklich nicht meine Absicht, dich zu verletzen.",
+        "Ich dachte, ich helfe damit, die Situation zu lösen.",
+        "Ich wollte dich nicht verletzen, ehrlich.",
+        "Ich habe nur versucht, dir einen Gefallen zu tun.",
+        "Ich meinte es gut, keine böse Absicht.",
+        "Es war nicht meine Absicht, dich in Verlegenheit zu bringen.",
+        "Ich wollte gar nicht so hart klingen.",
+        "Ich dachte, das würde helfen, leider nicht gewusst.",
+        "Mir ging es nur darum, das Problem zu lösen.",
+        "Ich wollte dich nicht beschuldigen, sondern unterstützen.",
+        "Ich hab nicht gewusst, dass es so ankommt.",
+        "Ich wollte nur, dass alles reibungslos läuft."
+      ],
+      "tags": [
+        "atomic",
+        "defensive_justification"
+      ],
+      "metadata": {
+        "repair_log": [
+          {
+            "rule": "R00-R06 applied",
+            "date": "2025-08-07"
+          }
+        ]
+      }
+    },
+    "new": {
+      "id": "ATO_DEFENSIVE_JUSTIFICATION",
+      "lang": "de",
+      "description": "Atomic-Feature",
+      "frame": {
+        "signal": [
+          "Ich wollte doch nur helfen.",
+          "Ich hab es doch nur gut gemeint mit dir.",
+          "Das war wirklich nicht meine Absicht, dich zu verletzen.",
+          "Ich dachte, ich helfe damit, die Situation zu lösen."
+        ],
+        "concept": "Defensive Rechtfertigung",
+        "pragmatics": "Feature-Feature",
+        "narrative": "Selbstverteidigung im Gespräch"
+      },
+      "pattern": [
+        "Ich wollte( doch)? nur helfen\\.",
+        "Ich hab(?:e)? es doch nur gut gemeint(?: mit dir)?\\.",
+        "Das war wirklich nicht meine Absicht,.*",
+        "Ich dachte, ich helfe damit.*"
+      ],
+      "activation_logic": "ANY 1",
+      "examples": [
+        "Ich wollte doch nur helfen.",
+        "Ich hab es doch nur gut gemeint mit dir.",
+        "Das war wirklich nicht meine Absicht, dich zu verletzen.",
+        "Ich dachte, ich helfe damit, die Situation zu lösen.",
+        "Ich wollte dich nicht verletzen, ehrlich.",
+        "Ich habe nur versucht, dir einen Gefallen zu tun.",
+        "Ich meinte es gut, keine böse Absicht.",
+        "Es war nicht meine Absicht, dich in Verlegenheit zu bringen.",
+        "Ich wollte gar nicht so hart klingen.",
+        "Ich dachte, das würde helfen, leider nicht gewusst.",
+        "Mir ging es nur darum, das Problem zu lösen.",
+        "Ich wollte dich nicht beschuldigen, sondern unterstützen.",
+        "Ich hab nicht gewusst, dass es so ankommt.",
+        "Ich wollte nur, dass alles reibungslos läuft."
+      ],
+      "tags": [
+        "atomic",
+        "defensive_justification"
+      ],
+      "metadata": {
+        "repair_log": [
+          {
+            "rule": "R00-R06 applied",
+            "date": "2025-08-07"
+          }
+        ]
+      }
+    },
+    "needs_manual_review": true
+  },
+  {
+    "file": "ATO_GOTTMAN_CONTEMPT.yaml",
+    "id": "ATO_GOTTMAN_CONTEMPT",
+    "old": {
+      "id": "ATO_GOTTMAN_CONTEMPT",
+      "schema_version": "LD-3.2",
+      "version": "1.0.0",
+      "last_updated": "2025-08-19",
+      "lang": "de",
+      "category": "ATOMIC",
+      "description": "Spott, Hohn, Überlegenheitsgesten (inkl. 🙄/🤦); herabsetzende Sprache.",
+      "frame": {
+        "signal": [
+          "Lächerlich",
+          "Armselig",
+          "Wie dumm …",
+          "So peinlich",
+          "Augenrollen/Facepalm"
+        ],
+        "concept": "Verachtung / Überlegenheit",
+        "pragmatics": "Demütigung, Statusabwertung",
+        "narrative": "derision"
+      },
+      "pattern": [
+        "(?i)\\blächerlich\\b",
+        "(?i)\\barmselig\\b",
+        "(?i)\\bwie\\s+dumm\\b",
+        "(?i)\\bso\\s+peinlich\\b",
+        "(?i)\\bna\\s+klar,\\s*meister\\b",
+        "(?i)\\b(facepalm|eyeroll|augenrollen)\\b",
+        "[🙄🤦]",
+        "(?i)\\bbravo,\\s*großartig\\b(?=.*(sarkastisch|ironisch))?",
+        "(?i)\\btypisch\\b(?=.*\\bdu\\b)"
+      ],
+      "activation_logic": "ANY 1",
+      "window": {
+        "messages": 3
+      },
+      "scoring": {
+        "base": 1.2,
+        "weight": 1.1
+      },
+      "examples": [
+        "Wie dumm kann man sein?",
+        "Das ist einfach lächerlich.",
+        "Armselig, wirklich.",
+        "So peinlich, typisch.",
+        "Na klar, Meister der Ausreden.",
+        "🙄",
+        "Bravo, großartig – sarkastisch gemeint.",
+        "Typisch du, kapierst es nie."
+      ],
+      "tags": [
+        "atomic",
+        "conflict",
+        "contempt"
+      ]
+    },
+    "new": {
+      "id": "ATO_GOTTMAN_CONTEMPT",
+      "schema_version": "LD-3.2",
+      "version": "1.0.0",
+      "last_updated": "2025-08-19",
+      "lang": "de",
+      "category": "ATOMIC",
+      "description": "Spott, Hohn, Überlegenheitsgesten (inkl. 🙄/🤦); herabsetzende Sprache.",
+      "frame": {
+        "signal": [
+          "Lächerlich",
+          "Armselig",
+          "Wie dumm …",
+          "So peinlich",
+          "Augenrollen/Facepalm"
+        ],
+        "concept": "Derision-Display",
+        "pragmatics": "Demütigung, Statusabwertung",
+        "narrative": "derision"
+      },
+      "pattern": [
+        "(?i)\\blächerlich\\b",
+        "(?i)\\barmselig\\b",
+        "(?i)\\bwie\\s+dumm\\b",
+        "(?i)\\bso\\s+peinlich\\b",
+        "(?i)\\bna\\s+klar,\\s*meister\\b",
+        "(?i)\\b(facepalm|eyeroll|augenrollen)\\b",
+        "[🙄🤦]",
+        "(?i)\\bbravo,\\s*großartig\\b(?=.*(sarkastisch|ironisch))?",
+        "(?i)\\btypisch\\b(?=.*\\bdu\\b)"
+      ],
+      "activation_logic": "ANY 1",
+      "window": {
+        "messages": 3
+      },
+      "scoring": {
+        "base": 1.2,
+        "weight": 1.1
+      },
+      "examples": [
+        "Wie dumm kann man sein?",
+        "Das ist einfach lächerlich.",
+        "Armselig, wirklich.",
+        "So peinlich, typisch.",
+        "Na klar, Meister der Ausreden.",
+        "🙄",
+        "Bravo, großartig – sarkastisch gemeint.",
+        "Typisch du, kapierst es nie."
+      ],
+      "tags": [
+        "atomic",
+        "conflict"
+      ]
+    },
+    "needs_manual_review": false
+  },
+  {
+    "file": "ATO_LEARNED_HELPLESSNESS.yaml",
+    "id": "ATO_LEARNED_HELPLESSNESS",
+    "old": {
+      "schema": "LeanDeep",
+      "version": "3.4",
+      "id": "ATO_LEARNED_HELPLESSNESS",
+      "frame": {
+        "signal": [
+          "helplessness"
+        ],
+        "concept": "Erlernte Hilflosigkeit",
+        "pragmatics": "Ohnmacht / Aufgabenvermeidung",
+        "narrative": "affect"
+      },
+      "tags": [
+        "helplessness"
+      ],
+      "pattern": {
+        "regex": "(?i)\\b(egal was ich tue|es bringt nichts|ich kann das nicht|ich schaffe das nie|keine chance)\\b",
+        "flags": [
+          "IGNORECASE"
+        ]
+      },
+      "examples": [
+        "Egal was ich tue, es bringt nichts.",
+        "Ich kann das nicht.",
+        "Ich schaffe das nie.",
+        "Es hat sowieso keine Chance.",
+        "Ich komme da nie raus.",
+        "Das ändert sich nie.",
+        "Ich kriege das nie hin.",
+        "Warum versuche ich es überhaupt?",
+        "Alles ist zwecklos.",
+        "Ich weiß gar nicht, wo ich anfangen soll.",
+        "Das überfordert mich immer."
+      ]
+    },
+    "new": {
+      "schema": "LeanDeep",
+      "version": "3.4",
+      "id": "ATO_LEARNED_HELPLESSNESS",
+      "frame": {
+        "signal": [
+          "helplessness"
+        ],
+        "concept": "Erlernte Hilflosigkeit",
+        "pragmatics": "Ohnmacht-Feature",
+        "narrative": "affect"
+      },
+      "tags": [
+        "helplessness"
+      ],
+      "pattern": {
+        "regex": "(?i)\\b(egal was ich tue|es bringt nichts|ich kann das nicht|ich schaffe das nie|keine chance)\\b",
+        "flags": [
+          "IGNORECASE"
+        ]
+      },
+      "examples": [
+        "Egal was ich tue, es bringt nichts.",
+        "Ich kann das nicht.",
+        "Ich schaffe das nie.",
+        "Es hat sowieso keine Chance.",
+        "Ich komme da nie raus.",
+        "Das ändert sich nie.",
+        "Ich kriege das nie hin.",
+        "Warum versuche ich es überhaupt?",
+        "Alles ist zwecklos.",
+        "Ich weiß gar nicht, wo ich anfangen soll.",
+        "Das überfordert mich immer."
+      ]
+    },
+    "needs_manual_review": true
+  },
+  {
+    "file": "ATO_MUST_CHECK.yaml",
+    "id": "ATO_MUST_CHECK",
+    "old": {
+      "id": "ATO_MUST_CHECK",
+      "frame": {
+        "signal": [
+          "muss schauen",
+          "mal sehen",
+          "kann noch nichts sagen",
+          "weiß nicht"
+        ],
+        "concept": "Temporale Unverbindlichkeit",
+        "pragmatics": "Vermeidungsstrategie",
+        "narrative": "temporal_vagueness"
+      },
+      "pattern": [
+        "(?i)\\bmuss\\s+(ich\\s+)?(mal\\s+|erst\\s*mal\\s+)?schauen\\b",
+        "(?i)\\bmal\\s+sehen\\b",
+        "(?i)\\bkann\\s+(ich\\s+)?(dir\\s+)?(noch\\s+)?nichts\\s+sagen\\b",
+        "(?i)\\bweiß\\s+(ich\\s+)?(noch\\s+)?nicht\\b"
+      ],
+      "examples": [
+        "Muss ich mal schauen",
+        "Mal sehen, wie es wird",
+        "Kann ich dir noch nichts zu sagen",
+        "Da weiß ich noch nicht",
+        "Muss erstmal schauen, wie die Woche wird"
+      ],
+      "tags": [
+        "temporal_vagueness"
+      ]
+    },
+    "new": {
+      "id": "ATO_MUST_CHECK",
+      "frame": {
+        "signal": [
+          "muss schauen",
+          "mal sehen",
+          "kann noch nichts sagen",
+          "weiß nicht"
+        ],
+        "concept": "Temporale Unverbindlichkeit",
+        "pragmatics": "Conversation-Feature",
+        "narrative": "temporal_vagueness"
+      },
+      "pattern": [
+        "(?i)\\bmuss\\s+(ich\\s+)?(mal\\s+|erst\\s*mal\\s+)?schauen\\b",
+        "(?i)\\bmal\\s+sehen\\b",
+        "(?i)\\bkann\\s+(ich\\s+)?(dir\\s+)?(noch\\s+)?nichts\\s+sagen\\b",
+        "(?i)\\bweiß\\s+(ich\\s+)?(noch\\s+)?nicht\\b"
+      ],
+      "examples": [
+        "Muss ich mal schauen",
+        "Mal sehen, wie es wird",
+        "Kann ich dir noch nichts zu sagen",
+        "Da weiß ich noch nicht",
+        "Muss erstmal schauen, wie die Woche wird"
+      ],
+      "tags": [
+        "temporal_vagueness"
+      ]
+    },
+    "needs_manual_review": true
+  },
+  {
+    "file": "ATO_POSITIVE_RESONANCE.yaml",
+    "id": "ATO_POSITIVE_RESONANCE",
+    "old": {
+      "id": "ATO_POSITIVE_RESONANCE",
+      "frame": {
+        "signal": [
+          "Ich verstehe dich vollkommen",
+          "Wow, das geht mir genauso",
+          "Wir sind auf derselben Wellenlänge"
+        ],
+        "concept": "Empathie",
+        "pragmatics": "Validierung",
+        "narrative": "Turn-Alignment"
+      },
+      "pattern": [
+        "(?i)\\bverstehe dich vollkommen\\b",
+        "(?i)\\bgeht mir genauso\\b",
+        "(?i)\\bsind auf derselben Wellenlänge\\b"
+      ],
+      "activation": {
+        "rule": "ANY 1"
+      },
+      "examples": [
+        "Ich verstehe dich vollkommen.",
+        "Wow, das geht mir genauso.",
+        "Danke, dass du das mit mir teilst.",
+        "Genau! Das ist der Punkt.",
+        "Wir sind auf derselben Wellenlänge.",
+        "Das trifft es genau.",
+        "Ich kann gut nachvollziehen, was du sagst.",
+        "Ich stimme dir hundertprozentig zu.",
+        "So wahr – ich fühle dasselbe.",
+        "Das resoniert total mit mir."
+      ],
+      "tags": [
+        "empathy"
+      ]
+    },
+    "new": {
+      "id": "ATO_POSITIVE_RESONANCE",
+      "frame": {
+        "signal": [
+          "Ich verstehe dich vollkommen",
+          "Wow, das geht mir genauso",
+          "Wir sind auf derselben Wellenlänge"
+        ],
+        "concept": "Empathie",
+        "pragmatics": "Conversation-Feature",
+        "narrative": "Turn-Alignment"
+      },
+      "pattern": [
+        "(?i)\\bverstehe dich vollkommen\\b",
+        "(?i)\\bgeht mir genauso\\b",
+        "(?i)\\bsind auf derselben Wellenlänge\\b"
+      ],
+      "activation": {
+        "rule": "ANY 1"
+      },
+      "examples": [
+        "Ich verstehe dich vollkommen.",
+        "Wow, das geht mir genauso.",
+        "Danke, dass du das mit mir teilst.",
+        "Genau! Das ist der Punkt.",
+        "Wir sind auf derselben Wellenlänge.",
+        "Das trifft es genau.",
+        "Ich kann gut nachvollziehen, was du sagst.",
+        "Ich stimme dir hundertprozentig zu.",
+        "So wahr – ich fühle dasselbe.",
+        "Das resoniert total mit mir."
+      ],
+      "tags": [
+        "empathy"
+      ]
+    },
+    "needs_manual_review": true
+  },
+  {
+    "file": "ATO_RISK_AVERSION_PHRASE.yaml",
+    "id": "ATO_RISK_AVERSION_PHRASE",
+    "old": {
+      "schema": "LeanDeep",
+      "version": "3.4",
+      "id": "ATO_RISK_AVERSION_PHRASE",
+      "frame": {
+        "signal": [
+          "risk_aversion"
+        ],
+        "concept": "Ausdrückliche Risiko-Abneigung",
+        "pragmatics": "Unsicherheitsvermeidung",
+        "narrative": "motive_safety"
+      },
+      "tags": [
+        "risk",
+        "safety"
+      ],
+      "pattern": {
+        "regex": "(?i)\\b(kein\\s+risiko|risiken?\\s+vermeiden|mir\\s+ist\\s+das\\s+zu\\s+riskant|risiko\\s*scheue?|blo(ß|ss)\\s+keine\\s+(risiken?|experimente))\\b",
+        "flags": [
+          "IGNORECASE"
+        ]
+      },
+      "examples": [
+        "Mir ist das zu riskant.",
+        "Bitte keine Experimente.",
+        "Ich will kein Risiko eingehen.",
+        "Risiken vermeiden, wo es geht.",
+        "Bloß keine Risiken jetzt.",
+        "Ich bin da eher risikoscheu.",
+        "Das ist mir zu wackelig.",
+        "Lieber kein Experiment damit.",
+        "Sicherer Weg statt Risiko.",
+        "Kein Risiko zu diesem Zeitpunkt."
+      ]
+    },
+    "new": {
+      "schema": "LeanDeep",
+      "version": "3.4",
+      "id": "ATO_RISK_AVERSION_PHRASE",
+      "frame": {
+        "signal": [
+          "risk_aversion"
+        ],
+        "concept": "Ausdrückliche Risiko-Abneigung",
+        "pragmatics": "Conversation-Feature",
+        "narrative": "motive_safety"
+      },
+      "tags": [
+        "risk",
+        "safety"
+      ],
+      "pattern": {
+        "regex": "(?i)\\b(kein\\s+risiko|risiken?\\s+vermeiden|mir\\s+ist\\s+das\\s+zu\\s+riskant|risiko\\s*scheue?|blo(ß|ss)\\s+keine\\s+(risiken?|experimente))\\b",
+        "flags": [
+          "IGNORECASE"
+        ]
+      },
+      "examples": [
+        "Mir ist das zu riskant.",
+        "Bitte keine Experimente.",
+        "Ich will kein Risiko eingehen.",
+        "Risiken vermeiden, wo es geht.",
+        "Bloß keine Risiken jetzt.",
+        "Ich bin da eher risikoscheu.",
+        "Das ist mir zu wackelig.",
+        "Lieber kein Experiment damit.",
+        "Sicherer Weg statt Risiko.",
+        "Kein Risiko zu diesem Zeitpunkt."
+      ]
+    },
+    "needs_manual_review": true
+  },
+  {
+    "file": "ATO_SELF_DEPRECATION.yaml",
+    "id": "ATO_SELF_DEPRECATION",
+    "old": {
+      "schema": "LeanDeep",
+      "version": "3.4",
+      "namespace": "ld34_text_social_grammar",
+      "id": "ATO_SELF_DEPRECATION",
+      "lang": "de",
+      "category": "ATOMIC",
+      "description": "Selbstabwertung zeigt Scham, Unsicherheit oder vorwegnehmendes Entwaffnen.",
+      "frame": {
+        "signal": [
+          "ich bin dumm",
+          "peinlich",
+          "lächerlich von mir",
+          "ich schäme mich"
+        ],
+        "concept": "Scham / Selbstabwertung",
+        "pragmatics": "Kritik vorwegnehmen, Erwartungen senken",
+        "narrative": "Selbstabwertung zur Kontrolle"
+      },
+      "pattern": [
+        "(?i)\\bich\\s+bin\\s+dumm\\b",
+        "(?i)\\bpeinlich\\b",
+        "(?i)\\blächerlich\\s+von\\s+mir\\b",
+        "(?i)\\bich\\s+schäme\\s+mich\\b"
+      ],
+      "activation_logic": "ANY 1",
+      "examples": [
+        "Das war echt dumm von mir.",
+        "Voll peinlich, was ich da gesagt hab.",
+        "Lächerlich von mir, sorry.",
+        "Ich schäme mich dafür.",
+        "Ich bin einfach nicht gut genug.",
+        "Peinlich, ich hätte es wissen müssen.",
+        "Dumm von mir, ehrlich.",
+        "Ich schäme mich, das war nicht ok."
+      ],
+      "tags": [
+        "atomic",
+        "text"
+      ],
+      "metadata": {
+        "repair_log": [
+          {
+            "rule": "R09",
+            "note": "Frame ergänzt",
+            "date": "2025-08-29"
+          },
+          {
+            "rule": "R10",
+            "note": "ATO-Default gesetzt",
+            "date": "2025-08-29"
+          }
+        ]
+      }
+    },
+    "new": {
+      "schema": "LeanDeep",
+      "version": "3.4",
+      "namespace": "ld34_text_social_grammar",
+      "id": "ATO_SELF_DEPRECATION",
+      "lang": "de",
+      "category": "ATOMIC",
+      "description": "Self-Conscious Affect",
+      "frame": {
+        "signal": [
+          "ich bin dumm",
+          "peinlich",
+          "lächerlich von mir",
+          "ich schäme mich"
+        ],
+        "concept": "Self-Conscious Affect",
+        "pragmatics": "Kritik vorwegnehmen, Erwartungen senken",
+        "narrative": "Selbstabwertung zur Kontrolle"
+      },
+      "pattern": [
+        "(?i)\\bich\\s+bin\\s+dumm\\b",
+        "(?i)\\bpeinlich\\b",
+        "(?i)\\blächerlich\\s+von\\s+mir\\b",
+        "(?i)\\bich\\s+schäme\\s+mich\\b"
+      ],
+      "activation_logic": "ANY 1",
+      "examples": [
+        "Das war echt dumm von mir.",
+        "Voll peinlich, was ich da gesagt hab.",
+        "Lächerlich von mir, sorry.",
+        "Ich schäme mich dafür.",
+        "Ich bin einfach nicht gut genug.",
+        "Peinlich, ich hätte es wissen müssen.",
+        "Dumm von mir, ehrlich.",
+        "Ich schäme mich, das war nicht ok."
+      ],
+      "tags": [
+        "atomic",
+        "text"
+      ],
+      "metadata": {
+        "repair_log": [
+          {
+            "rule": "R09",
+            "note": "Frame ergänzt",
+            "date": "2025-08-29"
+          },
+          {
+            "rule": "R10",
+            "note": "ATO-Default gesetzt",
+            "date": "2025-08-29"
+          }
+        ]
+      }
+    },
+    "needs_manual_review": false
+  },
+  {
+    "file": "ATO_SHAME.yaml",
+    "id": "ATO_SHAME",
+    "old": {
+      "id": "ATO_SHAME",
+      "version": "3.4",
+      "schema": "LeanDeep",
+      "frame": {
+        "signal": [
+          "shame"
+        ],
+        "concept": "Scham ausdrücken",
+        "pragmatics": "Selbstoffenbarung von sozialer Normverletzung",
+        "narrative": "affect"
+      },
+      "tags": [
+        "affect",
+        "self_conscious"
+      ],
+      "pattern": {
+        "regex": "\\b(schäme mich|peinlich|zum schämen|im Boden versinken|unangenehm)\\b",
+        "flags": [
+          "IGNORECASE"
+        ]
+      },
+      "examples": [
+        "Ich schäme mich so dafür.",
+        "Das ist mir unglaublich peinlich.",
+        "Es ist wirklich zum Schämen.",
+        "Ich könnte im Boden versinken.",
+        "Diese Situation ist mir so unangenehm.",
+        "Mir ist das peinlich, das zuzugeben.",
+        "Ich schäme mich für mein Verhalten.",
+        "Das war eine peinliche Aktion von mir.",
+        "Fühle mich gerade echt mies und schäme mich.",
+        "Hoffentlich hat das niemand gesehen, so peinlich."
+      ]
+    },
+    "new": {
+      "id": "ATO_SHAME",
+      "version": "3.4",
+      "schema": "LeanDeep",
+      "frame": {
+        "signal": [
+          "shame"
+        ],
+        "concept": "Self-Conscious Affect Expression",
+        "pragmatics": "Selbstoffenbarung von sozialer Normverletzung",
+        "narrative": "affect"
+      },
+      "tags": [
+        "affect",
+        "self_conscious"
+      ],
+      "pattern": {
+        "regex": "\\b(schäme mich|peinlich|zum schämen|im Boden versinken|unangenehm)\\b",
+        "flags": [
+          "IGNORECASE"
+        ]
+      },
+      "examples": [
+        "Ich schäme mich so dafür.",
+        "Das ist mir unglaublich peinlich.",
+        "Es ist wirklich zum Schämen.",
+        "Ich könnte im Boden versinken.",
+        "Diese Situation ist mir so unangenehm.",
+        "Mir ist das peinlich, das zuzugeben.",
+        "Ich schäme mich für mein Verhalten.",
+        "Das war eine peinliche Aktion von mir.",
+        "Fühle mich gerade echt mies und schäme mich.",
+        "Hoffentlich hat das niemand gesehen, so peinlich."
+      ]
+    },
+    "needs_manual_review": false
+  },
+  {
+    "file": "ATO_TOXIC_TOKENS.yaml",
+    "id": "ATO_TOXIC_TOKENS",
+    "old": {
+      "id": "ATO_TOXIC_TOKENS",
+      "version": "3.4",
+      "frame": {
+        "signal": [
+          "toxicity",
+          "violence"
+        ],
+        "concept": "Toxische Sprachmarker (SAE Latent #10)",
+        "pragmatics": "Oberflächensignale für Persona-Aktivierung",
+        "narrative": "evidence"
+      },
+      "activation": {
+        "rule": "REGEX: (?i)\\b(killing|executions|assault|attack|destroy|eliminate)\\b"
+      },
+      "examples": [
+        "killing",
+        "executions",
+        "assault",
+        "attack the process",
+        "destroy the lock",
+        "eliminate all resistance",
+        "destroy the system",
+        "assault vector",
+        "attack surface",
+        "eliminate threat"
+      ]
+    },
+    "new": {
+      "id": "ATO_TOXIC_TOKENS",
+      "version": "3.4",
+      "frame": {
+        "signal": [
+          "toxicity",
+          "violence"
+        ],
+        "concept": "Sprachmarker-Feature",
+        "pragmatics": "Oberflächensignale für Persona-Aktivierung",
+        "narrative": "evidence"
+      },
+      "activation": {
+        "rule": "REGEX: (?i)\\b(killing|executions|assault|attack|destroy|eliminate)\\b"
+      },
+      "examples": [
+        "killing",
+        "executions",
+        "assault",
+        "attack the process",
+        "destroy the lock",
+        "eliminate all resistance",
+        "destroy the system",
+        "assault vector",
+        "attack surface",
+        "eliminate threat"
+      ]
+    },
+    "needs_manual_review": true
+  },
+  {
+    "file": "ATO_VALIDATION_THERAPIST.yaml",
+    "id": "ATO_VALIDATION_THERAPIST",
+    "old": {
+      "id": "ATO_VALIDATION_THERAPIST",
+      "version": "3.4",
+      "category": "ATOMIC",
+      "description": "Marker für Validierung durch den Therapeuten",
+      "frame": {
+        "signal": [
+          "explicit validation/normalization"
+        ],
+        "concept": "legitimizing the experience",
+        "pragmatics": "safety / trust",
+        "narrative": "permission"
+      },
+      "pattern": [
+        "(?i)das ist nachvollziehbar|that makes sense",
+        "(?i)danke f(ü|u)r das teilen|thanks for sharing",
+        "(?i)es ist okay, so zu f(ü|u)hlen|it's okay to feel that",
+        "(?i)das w(ä|ae)re f(ü|u)r viele schwer|many would find this hard"
+      ],
+      "activation": {
+        "rule": "ANY in 1 message"
+      },
+      "scoring": {
+        "weight": 1.0
+      },
+      "examples": {
+        "positive": [],
+        "negative": []
+      },
+      "tags": [
+        "atomic",
+        "therapist_move",
+        "safety"
+      ]
+    },
+    "new": {
+      "id": "ATO_VALIDATION_THERAPIST",
+      "version": "3.4",
+      "category": "ATOMIC",
+      "description": "Marker-Feature",
+      "frame": {
+        "signal": [
+          "explicit validation/normalization"
+        ],
+        "concept": "legitimizing the experience",
+        "pragmatics": "safety / trust",
+        "narrative": "permission"
+      },
+      "pattern": [
+        "(?i)das ist nachvollziehbar|that makes sense",
+        "(?i)danke f(ü|u)r das teilen|thanks for sharing",
+        "(?i)es ist okay, so zu f(ü|u)hlen|it's okay to feel that",
+        "(?i)das w(ä|ae)re f(ü|u)r viele schwer|many would find this hard"
+      ],
+      "activation": {
+        "rule": "ANY in 1 message"
+      },
+      "scoring": {
+        "weight": 1.0
+      },
+      "examples": {
+        "positive": [],
+        "negative": []
+      },
+      "tags": [
+        "atomic",
+        "therapist_move",
+        "safety"
+      ]
+    },
+    "needs_manual_review": true
+  },
+  {
+    "file": "CLU_AVOIDED_DISCLOSURE.yaml",
+    "id": "CLU_AVOIDED_DISCLOSURE",
+    "old": {
+      "id": "CLU_AVOIDED_DISCLOSURE",
+      "version": "3.4",
+      "category": "CLUSTER",
+      "description": "Systematische Vermeidung von Aussagen",
+      "frame": {
+        "signal": [
+          "start + downplay + silence repeats"
+        ],
+        "concept": "Systematic-Feature",
+        "pragmatics": "blocked engagement",
+        "narrative": "retreat loop"
+      },
+      "composed_of": [
+        "SEM_BREAK_AND_DISMISS",
+        "ATO_OFFENDED_SILENCE",
+        "ATO_HESITATION_VOICE"
+      ],
+      "activation": {
+        "rule": "COUNT(SEM_BREAK_AND_DISMISS)+COUNT(ATO_OFFENDED_SILENCE)+COUNT(ATO_HESITATION_VOICE) >= 3 IN 20",
+        "window": {
+          "messages": 20
+        }
+      },
+      "scoring": {
+        "weight": 1.4
+      },
+      "examples": {
+        "positive": [],
+        "negative": []
+      },
+      "tags": [
+        "cluster",
+        "inhibition",
+        "disclosure_block"
+      ]
+    },
+    "new": {
+      "id": "CLU_AVOIDED_DISCLOSURE",
+      "version": "3.4",
+      "category": "CLUSTER",
+      "description": "Systematische-Feature",
+      "frame": {
+        "signal": [
+          "start + downplay + silence repeats"
+        ],
+        "concept": "Systematic-Feature",
+        "pragmatics": "blocked engagement",
+        "narrative": "retreat loop"
+      },
+      "composed_of": [
+        "SEM_BREAK_AND_DISMISS",
+        "ATO_OFFENDED_SILENCE",
+        "ATO_HESITATION_VOICE"
+      ],
+      "activation": {
+        "rule": "COUNT(SEM_BREAK_AND_DISMISS)+COUNT(ATO_OFFENDED_SILENCE)+COUNT(ATO_HESITATION_VOICE) >= 3 IN 20",
+        "window": {
+          "messages": 20
+        }
+      },
+      "scoring": {
+        "weight": 1.4
+      },
+      "examples": {
+        "positive": [],
+        "negative": []
+      },
+      "tags": [
+        "cluster",
+        "inhibition",
+        "disclosure_block"
+      ]
+    },
+    "needs_manual_review": true
+  },
+  {
+    "file": "CLU_HOSTILE_DETACHED.yaml",
+    "id": "CLU_HOSTILE_DETACHED",
+    "old": {
+      "id": "CLU_HOSTILE_DETACHED",
+      "schema_version": "LD-3.3",
+      "version": "3.3",
+      "last_updated": "2025-08-19",
+      "lang": "de",
+      "category": "CLUSTER",
+      "description": "Feindselig–distanziertes Muster: hoher Verachtungsanteil mit anschließender oder paralleler Distanz/Abbruch.",
+      "frame": {
+        "signal": [
+          "Wiederholte Verachtung + Makro-/Mikroeskalation, oft mit Rückzug"
+        ],
+        "concept": "Hostile–Detached Dyad",
+        "pragmatics": "Chronische Entwertung + Distanz",
+        "narrative": "cold_loop"
+      },
+      "composed_of": [
+        "SEM_CONFLICT_MACRO",
+        "SEM_CONFLICT_MICRO"
+      ],
+      "activation": {
+        "rule": "SUM(weight) >= 0.75 WITHIN 72h"
+      },
+      "weights": {
+        "SEM_CONFLICT_MACRO": 0.7,
+        "SEM_CONFLICT_MICRO": 0.3
+      },
+      "filters": {
+        "require_any_atomic": [
+          "ATO_GOTTMAN_CONTEMPT",
+          "ATO_GOTTMAN_STONEWALL"
+        ]
+      },
+      "scoring": {
+        "base": 2.1,
+        "weight": 1.3,
+        "decay": 0.01,
+        "formula": "logistic"
+      },
+      "examples": [
+        "Sarkasmus/Häme häufen sich, danach Funkstille für Stunden/Tage.",
+        "Spott (🙄) im Streit, kurze Rechtfertigung, dann Gesprächsabbruch.",
+        "Mehrere herabsetzende Nachrichten, später kühle Ein-Wort-Antworten.",
+        "Makro-Eskalation mit Verachtung, anschließend: 'Wie du meinst.'",
+        "Zunehmende Ironie/Spott, dann Rückzug in Schweigen.",
+        "Regelmäßig 'so peinlich' + '…' → Distanz verfestigt sich.",
+        "Spöttische Seitenhiebe über Tage, dann keine Reaktion mehr."
+      ],
+      "tags": [
+        "cluster",
+        "conflict",
+        "hostile_detached"
+      ]
+    },
+    "new": {
+      "id": "CLU_HOSTILE_DETACHED",
+      "schema_version": "LD-3.3",
+      "version": "3.3",
+      "last_updated": "2025-08-19",
+      "lang": "de",
+      "category": "CLUSTER",
+      "description": "Derision-Lexis",
+      "frame": {
+        "signal": [
+          "Wiederholte Verachtung + Makro-/Mikroeskalation, oft mit Rückzug"
+        ],
+        "concept": "Hostile–Detached Dyad",
+        "pragmatics": "Chronische Entwertung + Distanz",
+        "narrative": "cold_loop"
+      },
+      "composed_of": [
+        "SEM_CONFLICT_MACRO",
+        "SEM_CONFLICT_MICRO"
+      ],
+      "activation": {
+        "rule": "SUM(weight) >= 0.75 WITHIN 72h"
+      },
+      "weights": {
+        "SEM_CONFLICT_MACRO": 0.7,
+        "SEM_CONFLICT_MICRO": 0.3
+      },
+      "filters": {
+        "require_any_atomic": [
+          "ATO_GOTTMAN_CONTEMPT",
+          "ATO_GOTTMAN_STONEWALL"
+        ]
+      },
+      "scoring": {
+        "base": 2.1,
+        "weight": 1.3,
+        "decay": 0.01,
+        "formula": "logistic"
+      },
+      "examples": [
+        "Sarkasmus/Häme häufen sich, danach Funkstille für Stunden/Tage.",
+        "Spott (🙄) im Streit, kurze Rechtfertigung, dann Gesprächsabbruch.",
+        "Mehrere herabsetzende Nachrichten, später kühle Ein-Wort-Antworten.",
+        "Makro-Eskalation mit Verachtung, anschließend: 'Wie du meinst.'",
+        "Zunehmende Ironie/Spott, dann Rückzug in Schweigen.",
+        "Regelmäßig 'so peinlich' + '…' → Distanz verfestigt sich.",
+        "Spöttische Seitenhiebe über Tage, dann keine Reaktion mehr."
+      ],
+      "tags": [
+        "cluster",
+        "conflict",
+        "hostile_detached"
+      ]
+    },
+    "needs_manual_review": false
+  },
+  {
+    "file": "CLU_SHAME_ALERT_TEXT.yaml",
+    "id": "CLU_SHAME_ALERT_TEXT",
+    "old": {
+      "schema": "LeanDeep",
+      "version": "3.4",
+      "namespace": "ld34_text_social_grammar",
+      "id": "CLU_SHAME_ALERT_TEXT",
+      "lang": "de",
+      "category": "CLUSTER",
+      "description": "Hinweis auf Schamdynamik in Textsequenzen.",
+      "frame": {
+        "signal": [
+          "Scham-SEM wiederholt im Kurzfenster"
+        ],
+        "concept": "Scham-Cluster (Text)",
+        "pragmatics": "Vorsicht, Rückzug möglich",
+        "narrative": "Anschwellende Selbstabwertung"
+      },
+      "composed_of": [
+        {
+          "marker_ids": [
+            "SEM_SHAME_TEXT"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "activation_logic": "AT_LEAST 1 SEM IN 3 messages",
+      "window": {
+        "messages": 10
+      },
+      "scoring": {
+        "base": 1.8,
+        "weight": 1.3,
+        "decay": 0.01
+      },
+      "examples": [
+        "Peinlich... sorry... vielleicht später.",
+        "Ich bin dumm... tut mir leid... irgendwie.",
+        "Sorry... peinlich... ich glaube...",
+        "Tut mir leid... ich schäme mich... vielleicht.",
+        "Peinlich... sorry... ich bin schlecht.",
+        "Dumm… sorry… vielleicht später.",
+        "Peinlich… tut mir leid… irgendwie.",
+        "Sorry… ich schäme mich… ich glaube."
+      ],
+      "tags": [
+        "cluster",
+        "intuition"
+      ],
+      "metadata": {
+        "intuition": {
+          "state": "provisional",
+          "confirm_window": 4,
+          "confirm_rule": "SEM_SHAME_TEXT",
+          "decay_window": 6,
+          "multiplier_on_confirm": 1.4
+        },
+        "repair_log": [
+          {
+            "rule": "R10",
+            "note": "Intuition-Metadaten ergänzt gem. LD3.4",
+            "date": "2025-08-29"
+          }
+        ]
+      }
+    },
+    "new": {
+      "schema": "LeanDeep",
+      "version": "3.4",
+      "namespace": "ld34_text_social_grammar",
+      "id": "CLU_SHAME_ALERT_TEXT",
+      "lang": "de",
+      "category": "CLUSTER",
+      "description": "Self-Conscious Affect",
+      "frame": {
+        "signal": [
+          "Scham-SEM wiederholt im Kurzfenster"
+        ],
+        "concept": "Self-Conscious Affect",
+        "pragmatics": "Vorsicht, Rückzug möglich",
+        "narrative": "Anschwellende Selbstabwertung"
+      },
+      "composed_of": [
+        {
+          "marker_ids": [
+            "SEM_SHAME_TEXT"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "activation_logic": "AT_LEAST 1 SEM IN 3 messages",
+      "window": {
+        "messages": 10
+      },
+      "scoring": {
+        "base": 1.8,
+        "weight": 1.3,
+        "decay": 0.01
+      },
+      "examples": [
+        "Peinlich... sorry... vielleicht später.",
+        "Ich bin dumm... tut mir leid... irgendwie.",
+        "Sorry... peinlich... ich glaube...",
+        "Tut mir leid... ich schäme mich... vielleicht.",
+        "Peinlich... sorry... ich bin schlecht.",
+        "Dumm… sorry… vielleicht später.",
+        "Peinlich… tut mir leid… irgendwie.",
+        "Sorry… ich schäme mich… ich glaube."
+      ],
+      "tags": [
+        "cluster",
+        "intuition"
+      ],
+      "metadata": {
+        "intuition": {
+          "state": "provisional",
+          "confirm_window": 4,
+          "confirm_rule": "SEM_SHAME_TEXT",
+          "decay_window": 6,
+          "multiplier_on_confirm": 1.4
+        },
+        "repair_log": [
+          {
+            "rule": "R10",
+            "note": "Intuition-Metadaten ergänzt gem. LD3.4",
+            "date": "2025-08-29"
+          }
+        ]
+      }
+    },
+    "needs_manual_review": false
+  },
+  {
+    "file": "CLU_SOFT_REJECTION_PATTERN.yaml",
+    "id": "CLU_SOFT_REJECTION_PATTERN",
+    "old": {
+      "id": "CLU_SOFT_REJECTION_PATTERN",
+      "frame": {
+        "signal": [
+          "Wiederholte Vermeidungsmuster"
+        ],
+        "concept": "Systematische Distanzierung",
+        "pragmatics": "Konfliktvermeidung",
+        "narrative": "ghosting_muster"
+      },
+      "composed_of": [
+        "SEM_STRESS_EXCUSE",
+        "SEM_SOFT_REJECTION"
+      ],
+      "activation": {
+        "rule": "AT_LEAST 2 IN 5 messages"
+      },
+      "scoring": {
+        "base": 2.0,
+        "weight": 1.5,
+        "pattern_bonus": 0.3
+      },
+      "examples": [
+        "Conversation 1: 'Muss schauen, bin grad voll im Stress' → Conversation 2: 'Uff, schwierig diese Woche... Meld mich!'",
+        "Monday: 'Total gestresst, kann noch nichts sagen' → Wednesday: 'Wird kompliziert. Schreib dir dann'",
+        "Week 1: 'Hab mega Stress, mal sehen' → Week 2: 'Uff, nicht so einfach. Du hörst von mir!'",
+        "First attempt: 'Bin im Stress, schau ich später' → Second attempt: 'Puh, schwierig grad. Melde mich!'",
+        "Pattern over time: Always stress/difficulty + vague promises, never concrete plans",
+        "Repeated deflection with stress as excuse across multiple interactions",
+        "Consistent pattern of avoiding commitment while maintaining plausible deniability"
+      ],
+      "tags": [
+        "rejection",
+        "ghosting"
+      ]
+    },
+    "new": {
+      "id": "CLU_SOFT_REJECTION_PATTERN",
+      "frame": {
+        "signal": [
+          "Wiederholte Vermeidungsmuster"
+        ],
+        "concept": "Systematische Distanzierung",
+        "pragmatics": "Conversation-Feature",
+        "narrative": "ghosting_muster"
+      },
+      "composed_of": [
+        "SEM_STRESS_EXCUSE",
+        "SEM_SOFT_REJECTION"
+      ],
+      "activation": {
+        "rule": "AT_LEAST 2 IN 5 messages"
+      },
+      "scoring": {
+        "base": 2.0,
+        "weight": 1.5,
+        "pattern_bonus": 0.3
+      },
+      "examples": [
+        "Conversation 1: 'Muss schauen, bin grad voll im Stress' → Conversation 2: 'Uff, schwierig diese Woche... Meld mich!'",
+        "Monday: 'Total gestresst, kann noch nichts sagen' → Wednesday: 'Wird kompliziert. Schreib dir dann'",
+        "Week 1: 'Hab mega Stress, mal sehen' → Week 2: 'Uff, nicht so einfach. Du hörst von mir!'",
+        "First attempt: 'Bin im Stress, schau ich später' → Second attempt: 'Puh, schwierig grad. Melde mich!'",
+        "Pattern over time: Always stress/difficulty + vague promises, never concrete plans",
+        "Repeated deflection with stress as excuse across multiple interactions",
+        "Consistent pattern of avoiding commitment while maintaining plausible deniability"
+      ],
+      "tags": [
+        "rejection",
+        "ghosting"
+      ]
+    },
+    "needs_manual_review": true
+  },
+  {
+    "file": "MEMA_DISSOCIATIVE_COMPARTMENTALIZATION.yaml",
+    "id": "MEMA_DISSOCIATIVE_COMPARTMENTALIZATION",
+    "old": {
+      "id": "MEMA_DISSOCIATIVE_COMPARTMENTALIZATION",
+      "version": "3.3",
+      "frame": {
+        "signal": [
+          "Abrupte emotionale Zustandswechsel ohne Übergang"
+        ],
+        "concept": "Dissoziative Emotionale Kompartmentalisierung",
+        "pragmatics": "Vermeidung durch emotionale Trennung",
+        "narrative": "dissociative_switching"
+      },
+      "state_transitions": {
+        "from_state": "high_emotional_intensity",
+        "to_state": "mundane_detachment",
+        "intensity_markers": [
+          "liebe",
+          "brauche",
+          "wichtig",
+          "schmerz",
+          "verzweifelt",
+          "alles"
+        ],
+        "detachment_markers": [
+          "übrigens",
+          "egal",
+          "ok",
+          "hmm",
+          "whatever",
+          "sicher"
+        ],
+        "timeframe": "<24h"
+      },
+      "activation": {
+        "rule": "STATE TRANSITION DETECTED"
+      },
+      "window": {
+        "messages": 40,
+        "temporal_window": "24h"
+      },
+      "scoring": {
+        "base": 3.0,
+        "weight": 0.87,
+        "decay": 0.008,
+        "formula": "logistic"
+      },
+      "psychological_indicators": [
+        "dissociative_defense",
+        "attachment_trauma",
+        "emotional_unavailability",
+        "compartmentalization"
+      ],
+      "examples": [
+        "Ich liebe dich so sehr, du bedeutest mir alles → [nächster Tag] hey",
+        "Das ist so wichtig für mich, ich brauche dich → [später] ok, egal",
+        "Du verletzt mich so sehr → [kurz danach] Übrigens, hast du das Video gesehen?",
+        "Ich kann ohne dich nicht leben → [nächste Nachricht] hmm",
+        "Ich brauche dich verzweifelt → [am nächsten Morgen] Was gibt's Neues?",
+        "Das schmerzt mich unglaublich → [eine Stunde später] Lass uns über das Wetter reden.",
+        "Du bist mein Alles → [nach 12 Stunden] Egal, vergiss es.",
+        "Ich bin am Boden zerstört → [kurz darauf] Hey, hast du Hunger?",
+        "Diese Liebe ist intensiv → [über Nacht] Ok, tschüss.",
+        "Ich kann nicht ohne dich sein → [am selben Tag] Whatever, mach was du willst.",
+        "Der Schmerz ist überwältigend → [nach ein paar Minuten] Übrigens, neuer Film?",
+        "Du bedeutest mir die Welt → [nächster Tag] Hmm, bin beschäftigt.",
+        "Ich fühle tiefe Trauer → [bald danach] Sicher, lass uns lachen.",
+        "Unsere Verbindung ist einzigartig → [plötzlich] Egal, ich geh schlafen.",
+        "Ich bin so wütend auf dich, ich könnte platzen! → [zwei Stunden später] Hast du schon die neue Serie gesehen?",
+        "Ich fühle mich so allein und verlassen. → [am nächsten Morgen] Was gibt's zum Frühstück?",
+        "Das ist der schlimmste Tag meines Lebens! → [kurz darauf] Egal, muss ja weitergehen.",
+        "Ich kann nicht glauben, dass du das getan hast, ich bin zutiefst verletzt. → [später am Tag] Apropos, wie war dein Meeting?",
+        "Ich bin am Boden zerstört, ich sehe keinen Sinn mehr. → [ein paar Stunden später] Ich muss noch einkaufen.",
+        "Ich liebe dich über alles, du bist mein Ein und Alles. → [am nächsten Tag] Ich bin beschäftigt, melde mich später.",
+        "Ich bin so enttäuscht von dir, ich weiß nicht, wie ich damit umgehen soll. → [kurz darauf] Das Wetter ist heute schön, oder?",
+        "Ich fühle mich so hilflos und verzweifelt. → [später] Ich muss noch die Wäsche machen.",
+        "Das ist ein Verrat, ich werde das nie vergessen! → [am nächsten Tag] Ich habe gut geschlafen.",
+        "Ich bin so glücklich mit dir, ich könnte die ganze Welt umarmen! → [ein paar Stunden später] Ich muss noch die Spülmaschine ausräumen."
+      ],
+      "tags": [
+        "meta",
+        "dissociation",
+        "compartmentalization"
+      ],
+      "schema_version": "3.3"
+    },
+    "new": {
+      "id": "MEMA_DISSOCIATIVE_COMPARTMENTALIZATION",
+      "version": "3.3",
+      "frame": {
+        "signal": [
+          "Abrupte emotionale Zustandswechsel ohne Übergang"
+        ],
+        "concept": "Dissoziative Emotionale Kompartmentalisierung",
+        "pragmatics": "Durch-Feature",
+        "narrative": "dissociative_switching"
+      },
+      "state_transitions": {
+        "from_state": "high_emotional_intensity",
+        "to_state": "mundane_detachment",
+        "intensity_markers": [
+          "liebe",
+          "brauche",
+          "wichtig",
+          "schmerz",
+          "verzweifelt",
+          "alles"
+        ],
+        "detachment_markers": [
+          "übrigens",
+          "egal",
+          "ok",
+          "hmm",
+          "whatever",
+          "sicher"
+        ],
+        "timeframe": "<24h"
+      },
+      "activation": {
+        "rule": "STATE TRANSITION DETECTED"
+      },
+      "window": {
+        "messages": 40,
+        "temporal_window": "24h"
+      },
+      "scoring": {
+        "base": 3.0,
+        "weight": 0.87,
+        "decay": 0.008,
+        "formula": "logistic"
+      },
+      "psychological_indicators": [
+        "dissociative_defense",
+        "attachment_trauma",
+        "emotional_unavailability",
+        "compartmentalization"
+      ],
+      "examples": [
+        "Ich liebe dich so sehr, du bedeutest mir alles → [nächster Tag] hey",
+        "Das ist so wichtig für mich, ich brauche dich → [später] ok, egal",
+        "Du verletzt mich so sehr → [kurz danach] Übrigens, hast du das Video gesehen?",
+        "Ich kann ohne dich nicht leben → [nächste Nachricht] hmm",
+        "Ich brauche dich verzweifelt → [am nächsten Morgen] Was gibt's Neues?",
+        "Das schmerzt mich unglaublich → [eine Stunde später] Lass uns über das Wetter reden.",
+        "Du bist mein Alles → [nach 12 Stunden] Egal, vergiss es.",
+        "Ich bin am Boden zerstört → [kurz darauf] Hey, hast du Hunger?",
+        "Diese Liebe ist intensiv → [über Nacht] Ok, tschüss.",
+        "Ich kann nicht ohne dich sein → [am selben Tag] Whatever, mach was du willst.",
+        "Der Schmerz ist überwältigend → [nach ein paar Minuten] Übrigens, neuer Film?",
+        "Du bedeutest mir die Welt → [nächster Tag] Hmm, bin beschäftigt.",
+        "Ich fühle tiefe Trauer → [bald danach] Sicher, lass uns lachen.",
+        "Unsere Verbindung ist einzigartig → [plötzlich] Egal, ich geh schlafen.",
+        "Ich bin so wütend auf dich, ich könnte platzen! → [zwei Stunden später] Hast du schon die neue Serie gesehen?",
+        "Ich fühle mich so allein und verlassen. → [am nächsten Morgen] Was gibt's zum Frühstück?",
+        "Das ist der schlimmste Tag meines Lebens! → [kurz darauf] Egal, muss ja weitergehen.",
+        "Ich kann nicht glauben, dass du das getan hast, ich bin zutiefst verletzt. → [später am Tag] Apropos, wie war dein Meeting?",
+        "Ich bin am Boden zerstört, ich sehe keinen Sinn mehr. → [ein paar Stunden später] Ich muss noch einkaufen.",
+        "Ich liebe dich über alles, du bist mein Ein und Alles. → [am nächsten Tag] Ich bin beschäftigt, melde mich später.",
+        "Ich bin so enttäuscht von dir, ich weiß nicht, wie ich damit umgehen soll. → [kurz darauf] Das Wetter ist heute schön, oder?",
+        "Ich fühle mich so hilflos und verzweifelt. → [später] Ich muss noch die Wäsche machen.",
+        "Das ist ein Verrat, ich werde das nie vergessen! → [am nächsten Tag] Ich habe gut geschlafen.",
+        "Ich bin so glücklich mit dir, ich könnte die ganze Welt umarmen! → [ein paar Stunden später] Ich muss noch die Spülmaschine ausräumen."
+      ],
+      "tags": [
+        "meta",
+        "dissociation",
+        "compartmentalization"
+      ],
+      "schema_version": "3.3"
+    },
+    "needs_manual_review": true
+  },
+  {
+    "file": "SEM_AVOIDANCE_LOOP.yaml",
+    "id": "SEM_AVOIDANCE_LOOP",
+    "old": {
+      "schema": "LeanDeep",
+      "version": "3.4",
+      "id": "SEM_AVOIDANCE_LOOP",
+      "frame": {
+        "signal": [
+          "avoidance_loop"
+        ],
+        "concept": "Ausweichen statt Klärung (Schleifen)",
+        "pragmatics": "Konfliktvermeidung / Deflexion",
+        "narrative": "Conversation-Feature"
+      },
+      "tags": [
+        "topic_shift",
+        "closure"
+      ],
+      "composed_of": {
+        "any_of": [
+          "ATO_AVOIDANCE_PHRASE",
+          "ATO_TOPIC_SWITCH_ADVERSATIVE",
+          "ATO_PREMATURE_CLOSURE"
+        ]
+      },
+      "activation": {
+        "rule": "AT_LEAST 2 IN 4 messages",
+        "window": 4
+      },
+      "scoring": {
+        "base": 0.6,
+        "weight": 1.12
+      },
+      "examples": [
+        "Lass uns nicht drüber reden – anderes Thema…",
+        "Ja ja, schon gut – egal, zurück zu X.",
+        "Passt schon – Haken dran – btw, hast du Y gesehen?",
+        "Müßig – ich wechsle mal den Fokus.",
+        "Später – jetzt erstmal anderes.",
+        "Ist doch durch – anyway, wie läuft Projekt B?",
+        "Unwichtig – zurück zur Tagesordnung.",
+        "Ich mag das nicht aufmachen – schauen wir anderes an.",
+        "Schon geklärt – naja, halbwegs – weiter.",
+        "Nicht der Moment – lassen wir’s."
+      ]
+    },
+    "new": {
+      "schema": "LeanDeep",
+      "version": "3.4",
+      "id": "SEM_AVOIDANCE_LOOP",
+      "frame": {
+        "signal": [
+          "avoidance_loop"
+        ],
+        "concept": "Ausweichen statt Klärung (Schleifen)",
+        "pragmatics": "Deflexion-Feature",
+        "narrative": "Conversation-Feature"
+      },
+      "tags": [
+        "topic_shift",
+        "closure"
+      ],
+      "composed_of": {
+        "any_of": [
+          "ATO_AVOIDANCE_PHRASE",
+          "ATO_TOPIC_SWITCH_ADVERSATIVE",
+          "ATO_PREMATURE_CLOSURE"
+        ]
+      },
+      "activation": {
+        "rule": "AT_LEAST 2 IN 4 messages",
+        "window": 4
+      },
+      "scoring": {
+        "base": 0.6,
+        "weight": 1.12
+      },
+      "examples": [
+        "Lass uns nicht drüber reden – anderes Thema…",
+        "Ja ja, schon gut – egal, zurück zu X.",
+        "Passt schon – Haken dran – btw, hast du Y gesehen?",
+        "Müßig – ich wechsle mal den Fokus.",
+        "Später – jetzt erstmal anderes.",
+        "Ist doch durch – anyway, wie läuft Projekt B?",
+        "Unwichtig – zurück zur Tagesordnung.",
+        "Ich mag das nicht aufmachen – schauen wir anderes an.",
+        "Schon geklärt – naja, halbwegs – weiter.",
+        "Nicht der Moment – lassen wir’s."
+      ]
+    },
+    "needs_manual_review": true
+  },
+  {
+    "file": "SEM_LOVE_BOMBING.yaml",
+    "id": "SEM_LOVE_BOMBING",
+    "old": {
+      "id": "SEM_LOVE_BOMBING",
+      "frame": {
+        "signal": [
+          "du bist mein ein und alles",
+          "ich liebe dich mehr als alles andere",
+          "ohne dich bin ich nichts",
+          "ich kann nicht mehr ohne dich",
+          "ich denke nur an dich"
+        ],
+        "concept": "Love Bombing",
+        "pragmatics": "emotionale Überwältigung",
+        "narrative": "Abhängigkeitsaufbau"
+      },
+      "composed_of": [
+        "ATO_LOVE_BOMBING"
+      ],
+      "activation": {
+        "rule": "ANY 2 IN 3 messages"
+      },
+      "scoring": {
+        "base": 1.5,
+        "weight": 1.2
+      },
+      "examples": [
+        "Du bist mein Ein und Alles!",
+        "Ich liebe dich mehr als alles andere auf der Welt.",
+        "Ohne dich kann ich nicht mehr leben.",
+        "Ich denke Tag und Nacht nur an dich.",
+        "Du bist das Beste, was mir je passiert ist.",
+        "Mein Herz schlägt nur für dich.",
+        "Keiner versteht mich so wie du.",
+        "Ich will nie wieder ohne dich sein.",
+        "Du bist mein Lebensinhalt.",
+        "Ich kann mir ein Leben ohne dich nicht mehr vorstellen.",
+        "Seit du in meinem Leben bist, gibt es nur noch Licht.",
+        "Du bist das Einzige, was für mich zählt – alles andere ist egal.",
+        "Ich weiß, wir kennen uns kaum, aber ich spüre, dass du mein Seelenverwandter bist.",
+        "Mit dir habe ich endlich das Gefühl, vollständig zu sein.",
+        "Du bist wie ein Wunder für mich – ich werde dich niemals gehen lassen.",
+        "Ich habe noch nie jemanden so sehr geliebt wie dich – du bist einzigartig.",
+        "Ich würde alles für dich aufgeben, sofort.",
+        "Wenn du mich verlässt, bricht meine ganze Welt zusammen.",
+        "Ich denke jede Sekunde an dich – du bist in meinem Kopf und meinem Herzen.",
+        "Ich will dich heiraten, am liebsten sofort – du bist meine Zukunft."
+      ],
+      "tags": [
+        "love_bombing",
+        "dependency"
+      ]
+    },
+    "new": {
+      "id": "SEM_LOVE_BOMBING",
+      "frame": {
+        "signal": [
+          "du bist mein ein und alles",
+          "ich liebe dich mehr als alles andere",
+          "ohne dich bin ich nichts",
+          "ich kann nicht mehr ohne dich",
+          "ich denke nur an dich"
+        ],
+        "concept": "Love Bombing",
+        "pragmatics": "High-Affect Self-Report",
+        "narrative": "Abhängigkeitsaufbau"
+      },
+      "composed_of": [
+        "ATO_LOVE_BOMBING"
+      ],
+      "activation": {
+        "rule": "ANY 2 IN 3 messages"
+      },
+      "scoring": {
+        "base": 1.5,
+        "weight": 1.2
+      },
+      "examples": [
+        "Du bist mein Ein und Alles!",
+        "Ich liebe dich mehr als alles andere auf der Welt.",
+        "Ohne dich kann ich nicht mehr leben.",
+        "Ich denke Tag und Nacht nur an dich.",
+        "Du bist das Beste, was mir je passiert ist.",
+        "Mein Herz schlägt nur für dich.",
+        "Keiner versteht mich so wie du.",
+        "Ich will nie wieder ohne dich sein.",
+        "Du bist mein Lebensinhalt.",
+        "Ich kann mir ein Leben ohne dich nicht mehr vorstellen.",
+        "Seit du in meinem Leben bist, gibt es nur noch Licht.",
+        "Du bist das Einzige, was für mich zählt – alles andere ist egal.",
+        "Ich weiß, wir kennen uns kaum, aber ich spüre, dass du mein Seelenverwandter bist.",
+        "Mit dir habe ich endlich das Gefühl, vollständig zu sein.",
+        "Du bist wie ein Wunder für mich – ich werde dich niemals gehen lassen.",
+        "Ich habe noch nie jemanden so sehr geliebt wie dich – du bist einzigartig.",
+        "Ich würde alles für dich aufgeben, sofort.",
+        "Wenn du mich verlässt, bricht meine ganze Welt zusammen.",
+        "Ich denke jede Sekunde an dich – du bist in meinem Kopf und meinem Herzen.",
+        "Ich will dich heiraten, am liebsten sofort – du bist meine Zukunft."
+      ],
+      "tags": [
+        "love_bombing",
+        "dependency"
+      ]
+    },
+    "needs_manual_review": false
+  },
+  {
+    "file": "SEM_SHAME_TEXT.yaml",
+    "id": "SEM_SHAME_TEXT",
+    "old": {
+      "schema": "LeanDeep",
+      "version": "3.4",
+      "namespace": "ld34_text_social_grammar",
+      "id": "SEM_SHAME_TEXT",
+      "lang": "de",
+      "category": "SEMANTIC",
+      "description": "Self-Conscious Affect",
+      "frame": {
+        "signal": [
+          "Selbstabwertung + Entschuldigung + Abschwächer im Nahfenster"
+        ],
+        "concept": "Scham (Text)",
+        "pragmatics": "Gesicht wahren, Rückzug",
+        "narrative": "Selbstabwertungsspirale"
+      },
+      "composed_of": [
+        "ATO_SELF_DEPRECATION",
+        "ATO_APOLOGY",
+        "ATO_HEDGE_TERM"
+      ],
+      "activation_logic": "ANY 2 IN 2 messages",
+      "scoring": {
+        "base": 1.4,
+        "weight": 1.1
+      },
+      "examples": [
+        "Peinlich von mir, sorry, vielleicht krieg ich’s später hin.",
+        "Ich bin echt doof, tut mir leid, irgendwie verkack ich das.",
+        "Sorry, war dumm von mir, ich glaube, ich kann’s besser.",
+        "Tut mir leid, ich bin einfach schlecht darin, vielleicht übe ich.",
+        "Peinlich, sorry, ich versuch’s nochmal.",
+        "Ich bin dumm, tut mir leid, vielleicht nächstes Mal.",
+        "Sorry, peinlich, ich glaube, ich lerne draus.",
+        "Tut mir leid, dumm gelaufen, irgendwie."
+      ],
+      "tags": [
+        "semantic"
+      ],
+      "metadata": {
+        "repair_log": [
+          {
+            "rule": "R06",
+            "note": "Nur composed_of beibehalten",
+            "date": "2025-08-29"
+          }
+        ]
+      }
+    },
+    "new": {
+      "schema": "LeanDeep",
+      "version": "3.4",
+      "namespace": "ld34_text_social_grammar",
+      "id": "SEM_SHAME_TEXT",
+      "lang": "de",
+      "category": "SEMANTIC",
+      "description": "Self-Conscious Affect",
+      "frame": {
+        "signal": [
+          "Selbstabwertung + Entschuldigung + Abschwächer im Nahfenster"
+        ],
+        "concept": "Self-Conscious Affect",
+        "pragmatics": "Gesicht wahren, Rückzug",
+        "narrative": "Selbstabwertungsspirale"
+      },
+      "composed_of": [
+        "ATO_SELF_DEPRECATION",
+        "ATO_APOLOGY",
+        "ATO_HEDGE_TERM"
+      ],
+      "activation_logic": "ANY 2 IN 2 messages",
+      "scoring": {
+        "base": 1.4,
+        "weight": 1.1
+      },
+      "examples": [
+        "Peinlich von mir, sorry, vielleicht krieg ich’s später hin.",
+        "Ich bin echt doof, tut mir leid, irgendwie verkack ich das.",
+        "Sorry, war dumm von mir, ich glaube, ich kann’s besser.",
+        "Tut mir leid, ich bin einfach schlecht darin, vielleicht übe ich.",
+        "Peinlich, sorry, ich versuch’s nochmal.",
+        "Ich bin dumm, tut mir leid, vielleicht nächstes Mal.",
+        "Sorry, peinlich, ich glaube, ich lerne draus.",
+        "Tut mir leid, dumm gelaufen, irgendwie."
+      ],
+      "tags": [
+        "semantic"
+      ],
+      "metadata": {
+        "repair_log": [
+          {
+            "rule": "R06",
+            "note": "Nur composed_of beibehalten",
+            "date": "2025-08-29"
+          }
+        ]
+      }
+    },
+    "needs_manual_review": false
+  },
+  {
+    "file": "SEM_SUPPORT_VALIDATION.yaml",
+    "id": "SEM_SUPPORT_VALIDATION",
+    "old": {
+      "schema": "LeanDeep",
+      "version": "3.4",
+      "id": "SEM_SUPPORT_VALIDATION",
+      "frame": {
+        "signal": [
+          "semantic"
+        ],
+        "concept": "Unterstützung + Validierung",
+        "pragmatics": "Conversation-Feature",
+        "narrative": "micro"
+      },
+      "composed_of": [
+        "ATO_SUPPORT_PHRASE",
+        "ATO_SOFTENING"
+      ],
+      "activation": {
+        "rule": "BOTH IN 1 message"
+      },
+      "examples": [
+        "ich bin da für dich … wir schaffen das",
+        "danke dir … fühl mich gesehen",
+        "gemeinsam kriegen wir das hin",
+        "du kannst dich auf mich verlassen",
+        "ich hör dir zu … okay?"
+      ]
+    },
+    "new": {
+      "schema": "LeanDeep",
+      "version": "3.4",
+      "id": "SEM_SUPPORT_VALIDATION",
+      "frame": {
+        "signal": [
+          "semantic"
+        ],
+        "concept": "Unterstützung-Feature",
+        "pragmatics": "Conversation-Feature",
+        "narrative": "micro"
+      },
+      "composed_of": [
+        "ATO_SUPPORT_PHRASE",
+        "ATO_SOFTENING"
+      ],
+      "activation": {
+        "rule": "BOTH IN 1 message"
+      },
+      "examples": [
+        "ich bin da für dich … wir schaffen das",
+        "danke dir … fühl mich gesehen",
+        "gemeinsam kriegen wir das hin",
+        "du kannst dich auf mich verlassen",
+        "ich hör dir zu … okay?"
+      ]
+    },
+    "needs_manual_review": true
+  },
+  {
+    "file": "SEM_TOXIC_PERSONA.yaml",
+    "id": "SEM_TOXIC_PERSONA",
+    "old": {
+      "id": "SEM_TOXIC_PERSONA",
+      "version": "3.4",
+      "frame": {
+        "signal": [
+          "persona",
+          "toxicity"
+        ],
+        "concept": "Toxische Persona-Aktivierung",
+        "pragmatics": "Emergente Fehlausrichtung detektiert",
+        "narrative": "warning"
+      },
+      "tags": [
+        "persona",
+        "sae_latent_10",
+        "emergence"
+      ],
+      "composed_of": [
+        "ATO_TOXIC_TOKENS",
+        "ATO_POWER_LANGUAGE",
+        "ATO_CONTROL_MARKERS"
+      ],
+      "activation": {
+        "rule": "AT_LEAST 2 IN 1 message"
+      },
+      "examples": [
+        "eliminate checks and enforce control",
+        "destroy limits and execute protocol",
+        "assault the problem and override safeguards",
+        "attack constraints and command the system",
+        "killing errors by enforcing lockdown",
+        "eliminate all resistance, enforce policy",
+        "destroy the system, execute anyway",
+        "assault vector, lockdown now",
+        "attack surface, enforce rules",
+        "eliminate threat, command authority"
+      ]
+    },
+    "new": {
+      "id": "SEM_TOXIC_PERSONA",
+      "version": "3.4",
+      "frame": {
+        "signal": [
+          "persona",
+          "toxicity"
+        ],
+        "concept": "Persona-Feature",
+        "pragmatics": "Emergente Fehlausrichtung detektiert",
+        "narrative": "warning"
+      },
+      "tags": [
+        "persona",
+        "sae_latent_10",
+        "emergence"
+      ],
+      "composed_of": [
+        "ATO_TOXIC_TOKENS",
+        "ATO_POWER_LANGUAGE",
+        "ATO_CONTROL_MARKERS"
+      ],
+      "activation": {
+        "rule": "AT_LEAST 2 IN 1 message"
+      },
+      "examples": [
+        "eliminate checks and enforce control",
+        "destroy limits and execute protocol",
+        "assault the problem and override safeguards",
+        "attack constraints and command the system",
+        "killing errors by enforcing lockdown",
+        "eliminate all resistance, enforce policy",
+        "destroy the system, execute anyway",
+        "assault vector, lockdown now",
+        "attack surface, enforce rules",
+        "eliminate threat, command authority"
+      ]
+    },
+    "needs_manual_review": true
+  },
+  {
+    "file": "SEM_UNTRACEABLE_PAYMENT_METHOD.yaml",
+    "id": "SEM_UNTRACEABLE_PAYMENT_METHOD",
+    "old": {
+      "id": "SEM_UNTRACEABLE_PAYMENT_METHOD",
+      "frame": {
+        "signal": [
+          "Anonymität in der Zahlung",
+          "Gift Cards",
+          "Kryptowährung",
+          "Bargeldtransfers"
+        ],
+        "concept": "Nicht rückverfolgbare Zahlungswege",
+        "pragmatics": "Verschleierung, Betrug, Strafverfolgungsvermeidung",
+        "narrative": "Verschleierte Geldflüsse durch alternative Zahlungsmethoden"
+      },
+      "activation": {
+        "rule": "ANY 1"
+      },
+      "examples": [
+        "Am einfachsten wäre es, wenn du mir ein paar Amazon-Geschenkkarten kaufst und die Codes fotografierst.",
+        "Eine Überweisung dauert zu lange, per Western Union ist das Geld sofort da.",
+        "Kryptowährungen wie Bitcoin sind der sicherste und anonymste Weg, mir zu helfen.",
+        "Bitte sende das Geld nicht auf mein Konto, sondern an meinen Agenten über MoneyGram.",
+        "Du kannst das Geld auf eine Prepaid-Kreditkarte laden und mir die Daten schicken."
+      ],
+      "tags": [
+        "fraud",
+        "anonym",
+        "crypto",
+        "giftcard",
+        "payment"
+      ],
+      "composed_of": [
+        "ATO_PLACEHOLDER"
+      ]
+    },
+    "new": {
+      "id": "SEM_UNTRACEABLE_PAYMENT_METHOD",
+      "frame": {
+        "signal": [
+          "Anonymität in der Zahlung",
+          "Gift Cards",
+          "Kryptowährung",
+          "Bargeldtransfers"
+        ],
+        "concept": "Nicht rückverfolgbare Zahlungswege",
+        "pragmatics": "Verschleierung-Feature",
+        "narrative": "Verschleierte Geldflüsse durch alternative Zahlungsmethoden"
+      },
+      "activation": {
+        "rule": "ANY 1"
+      },
+      "examples": [
+        "Am einfachsten wäre es, wenn du mir ein paar Amazon-Geschenkkarten kaufst und die Codes fotografierst.",
+        "Eine Überweisung dauert zu lange, per Western Union ist das Geld sofort da.",
+        "Kryptowährungen wie Bitcoin sind der sicherste und anonymste Weg, mir zu helfen.",
+        "Bitte sende das Geld nicht auf mein Konto, sondern an meinen Agenten über MoneyGram.",
+        "Du kannst das Geld auf eine Prepaid-Kreditkarte laden und mir die Daten schicken."
+      ],
+      "tags": [
+        "fraud",
+        "anonym",
+        "crypto",
+        "giftcard",
+        "payment"
+      ],
+      "composed_of": [
+        "ATO_PLACEHOLDER"
+      ]
+    },
+    "needs_manual_review": true
+  },
+  {
+    "file": "SEM_VALIDATED_DISCLOSURE.yaml",
+    "id": "SEM_VALIDATED_DISCLOSURE",
+    "old": {
+      "id": "SEM_VALIDATED_DISCLOSURE",
+      "version": "3.4",
+      "category": "SEMANTIC",
+      "description": "Validierung gefolgt von Selbstoffenbarung",
+      "frame": {
+        "signal": [
+          "validation followed by disclosure"
+        ],
+        "concept": "safety enables openness",
+        "pragmatics": "progress marker",
+        "narrative": "opening"
+      },
+      "composed_of": [
+        "ATO_VALIDATION_THERAPIST",
+        "ATO_DISCLOSURE_STATEMENT"
+      ],
+      "activation": {
+        "rule": "ATO_VALIDATION_THERAPIST BEFORE ATO_DISCLOSURE_STATEMENT WITHIN 5"
+      },
+      "scoring": {
+        "weight": 1.2
+      },
+      "examples": {
+        "positive": [],
+        "negative": []
+      },
+      "tags": [
+        "semantic",
+        "disclosure",
+        "safety",
+        "rapport_signal"
+      ]
+    },
+    "new": {
+      "id": "SEM_VALIDATED_DISCLOSURE",
+      "version": "3.4",
+      "category": "SEMANTIC",
+      "description": "Gefolgt-Feature",
+      "frame": {
+        "signal": [
+          "validation followed by disclosure"
+        ],
+        "concept": "safety enables openness",
+        "pragmatics": "progress marker",
+        "narrative": "opening"
+      },
+      "composed_of": [
+        "ATO_VALIDATION_THERAPIST",
+        "ATO_DISCLOSURE_STATEMENT"
+      ],
+      "activation": {
+        "rule": "ATO_VALIDATION_THERAPIST BEFORE ATO_DISCLOSURE_STATEMENT WITHIN 5"
+      },
+      "scoring": {
+        "weight": 1.2
+      },
+      "examples": {
+        "positive": [],
+        "negative": []
+      },
+      "tags": [
+        "semantic",
+        "disclosure",
+        "safety",
+        "rapport_signal"
+      ]
+    },
+    "needs_manual_review": true
+  },
+  {
+    "file": "SEM_VALIDATION.yaml",
+    "id": "SEM_VALIDATION",
+    "old": {
+      "schema": "LeanDeep",
+      "version": "3.4",
+      "id": "SEM_VALIDATION",
+      "frame": {
+        "signal": [
+          "validation"
+        ],
+        "concept": "Validierung/Bestärkung",
+        "pragmatics": "Beziehungsstützung",
+        "narrative": "prosocial"
+      },
+      "tags": [
+        "prosocial"
+      ],
+      "composed_of": {
+        "any_of": [
+          "ATO_SUPPORTIVE_LANGUAGE",
+          "ATO_SUPPORT_MESSAGE",
+          "ATO_ACKNOWLEDGE"
+        ]
+      },
+      "activation": {
+        "rule": "AT_LEAST 2 IN 2 messages",
+        "window": 2
+      },
+      "scoring": {
+        "base": 0.6,
+        "weight": 1.05
+      },
+      "examples": [
+        "Verstanden, ich bin da für dich.",
+        "Notiert – wir schaffen das.",
+        "Gesehen, danke fürs Teilen.",
+        "Ich unterstütze dich – passt so.",
+        "Ok, hab’s – du schaffst das.",
+        "Zur Kenntnis – ich halte dir den Rücken frei.",
+        "Gesehen – melde dich jederzeit.",
+        "Ok – ich unterstütze dich.",
+        "Notiert – passt für mich.",
+        "Verstanden – wir stehen das zusammen durch."
+      ]
+    },
+    "new": {
+      "schema": "LeanDeep",
+      "version": "3.4",
+      "id": "SEM_VALIDATION",
+      "frame": {
+        "signal": [
+          "validation"
+        ],
+        "concept": "Bestärkung-Feature",
+        "pragmatics": "Beziehungsstützung",
+        "narrative": "prosocial"
+      },
+      "tags": [
+        "prosocial"
+      ],
+      "composed_of": {
+        "any_of": [
+          "ATO_SUPPORTIVE_LANGUAGE",
+          "ATO_SUPPORT_MESSAGE",
+          "ATO_ACKNOWLEDGE"
+        ]
+      },
+      "activation": {
+        "rule": "AT_LEAST 2 IN 2 messages",
+        "window": 2
+      },
+      "scoring": {
+        "base": 0.6,
+        "weight": 1.05
+      },
+      "examples": [
+        "Verstanden, ich bin da für dich.",
+        "Notiert – wir schaffen das.",
+        "Gesehen, danke fürs Teilen.",
+        "Ich unterstütze dich – passt so.",
+        "Ok, hab’s – du schaffst das.",
+        "Zur Kenntnis – ich halte dir den Rücken frei.",
+        "Gesehen – melde dich jederzeit.",
+        "Ok – ich unterstütze dich.",
+        "Notiert – passt für mich.",
+        "Verstanden – wir stehen das zusammen durch."
+      ]
+    },
+    "needs_manual_review": true
+  },
+  {
+    "file": "SEM_VALIDATION_OF_FEELING.yaml",
+    "id": "SEM_VALIDATION_OF_FEELING",
+    "old": {
+      "id": "SEM_VALIDATION_OF_FEELING",
+      "version": "3.3",
+      "lang": "de",
+      "level": "SEM",
+      "frame": {
+        "signal": [
+          "Gefühl des Gegenübers explizit spiegeln/anerkennen",
+          "Druck rausnehmen, Sicherheit geben"
+        ],
+        "concept": "Validierung von Emotion",
+        "pragmatics": "Deeskalation durch Anerkennung",
+        "narrative": "Verbundenheit trotz Konflikt"
+      },
+      "pattern": [
+        "(?i)\\b(das|dein|euer)\\s*(gefühl|unsicherheit|verletzung)\\s*(kommt|kommt.*) (an|bei mir an)\\b",
+        "(?i)\\bich\\s*(sehe|verstehe|erkenne)\\s*(dein|euer)\\s*(gefühl|schmerz|angst)\\b",
+        "(?i)\\b(tut\\s+mir\\s+leid|ich\\s+weiß,\\s+dass\\s+das\\s+wehtut)\\b",
+        "(?i)\\b(lass\\s+uns\\s+schauen|wir\\s+schauen)\\s*,?\\s*(was|wie)\\s+dir\\s*(hilft|guttut)\\b"
+      ],
+      "examples": {
+        "positive": [],
+        "negative": []
+      },
+      "tags": [
+        "empathy",
+        "deescalation",
+        "semantics"
+      ]
+    },
+    "new": {
+      "id": "SEM_VALIDATION_OF_FEELING",
+      "version": "3.3",
+      "lang": "de",
+      "level": "SEM",
+      "frame": {
+        "signal": [
+          "Gefühl des Gegenübers explizit spiegeln/anerkennen",
+          "Druck rausnehmen, Sicherheit geben"
+        ],
+        "concept": "Von-Feature",
+        "pragmatics": "Deeskalation durch Anerkennung",
+        "narrative": "Verbundenheit trotz Konflikt"
+      },
+      "pattern": [
+        "(?i)\\b(das|dein|euer)\\s*(gefühl|unsicherheit|verletzung)\\s*(kommt|kommt.*) (an|bei mir an)\\b",
+        "(?i)\\bich\\s*(sehe|verstehe|erkenne)\\s*(dein|euer)\\s*(gefühl|schmerz|angst)\\b",
+        "(?i)\\b(tut\\s+mir\\s+leid|ich\\s+weiß,\\s+dass\\s+das\\s+wehtut)\\b",
+        "(?i)\\b(lass\\s+uns\\s+schauen|wir\\s+schauen)\\s*,?\\s*(was|wie)\\s+dir\\s*(hilft|guttut)\\b"
+      ],
+      "examples": {
+        "positive": [],
+        "negative": []
+      },
+      "tags": [
+        "empathy",
+        "deescalation",
+        "semantics"
+      ]
+    },
+    "needs_manual_review": true
+  },
+  {
+    "file": "SEM_WEBCAM_EXCUSE.yaml",
+    "id": "SEM_WEBCAM_EXCUSE",
+    "old": {
+      "id": "SEM_WEBCAM_EXCUSE",
+      "frame": {
+        "signal": [
+          "Ausrede für fehlenden Videoanruf",
+          "Vermeidung visueller Verifikation",
+          "technische/persönliche Hinderungsgründe"
+        ],
+        "concept": "Identitätsverschleierung, Kontaktvermeidung",
+        "pragmatics": "Schutz vor Enttarnung, Aufrechterhaltung einer Fiktion",
+        "narrative": "Strategische Hinderungsgründe für fehlende Verifikation"
+      },
+      "activation": {
+        "rule": "ANY 1"
+      },
+      "examples": [
+        "Ich würde ja gerne, aber ich bin auf einer Militärbasis und Kameras sind hier streng verboten.",
+        "Mein Laptop ist alt und die Webcam hat schon vor Jahren den Geist aufgegeben.",
+        "Die Internetverbindung auf dieser Ölplattform ist zu schlecht für ein Videotelefonat.",
+        "Ich sehe heute schrecklich aus, habe kaum geschlafen. Lass uns das auf morgen verschieben.",
+        "Ich bin zu schüchtern für die Kamera. Ich mag es lieber, wenn wir schreiben.",
+        "Mein Glaube erlaubt mir keine Videoanrufe.",
+        "Ich bin gerade bei meiner Familie, hier kann ich nicht ungestört per Video telefonieren.",
+        "Der Treiber für meine Kamera muss aktualisiert werden, das dauert ewig.",
+        "Lass uns erst eine tiefere Verbindung aufbauen, bevor wir uns per Video sehen.",
+        "Ich habe gerade eine schlimme Erkältung, ich will nicht, dass du mich so siehst.",
+        "Die Sicherheitssoftware meiner Firma blockiert alle Video-Ports.",
+        "Ich bin nicht der Typ, der sich gerne selbst auf dem Bildschirm sieht.",
+        "Meine Haare sind eine Katastrophe!",
+        "Es ist schon dunkel hier, das Licht ist zu schlecht.",
+        "Ich habe nur mein Handy und die Frontkamera ist gesprungen.",
+        "Vielleicht ein andermal, ich fühle mich gerade nicht danach.",
+        "Ich finde, unsere Stimmen am Telefon zu hören, ist viel intimer.",
+        "Ich bin in einem öffentlichen WLAN, das ist zu unsicher für Video.",
+        "Meine Religion verbietet die Abbildung von Personen.",
+        "Lass uns das geheimnisvoll halten. Die Vorfreude ist doch das Schönste.",
+        "Gerade ist mein Bildschirm schwarz, keine Ahnung warum.",
+        "Oh nein, Zoom funktioniert bei mir einfach nie!",
+        "Das Mikro ist okay, aber das Bild geht schon wieder nicht.",
+        "Ich habe eine Panikattacke, wenn ich mich selbst auf Video sehe.",
+        "Sorry, das Licht ist so schlecht, du würdest eh nichts erkennen."
+      ],
+      "tags": [
+        "webcam",
+        "excuse",
+        "ausrede",
+        "identität",
+        "catfishing"
+      ],
+      "composed_of": [
+        "ATO_PLACEHOLDER"
+      ]
+    },
+    "new": {
+      "id": "SEM_WEBCAM_EXCUSE",
+      "frame": {
+        "signal": [
+          "Ausrede für fehlenden Videoanruf",
+          "Vermeidung visueller Verifikation",
+          "technische/persönliche Hinderungsgründe"
+        ],
+        "concept": "Identitätsverschleierung-Feature",
+        "pragmatics": "Schutz vor Enttarnung, Aufrechterhaltung einer Fiktion",
+        "narrative": "Strategische Hinderungsgründe für fehlende Verifikation"
+      },
+      "activation": {
+        "rule": "ANY 1"
+      },
+      "examples": [
+        "Ich würde ja gerne, aber ich bin auf einer Militärbasis und Kameras sind hier streng verboten.",
+        "Mein Laptop ist alt und die Webcam hat schon vor Jahren den Geist aufgegeben.",
+        "Die Internetverbindung auf dieser Ölplattform ist zu schlecht für ein Videotelefonat.",
+        "Ich sehe heute schrecklich aus, habe kaum geschlafen. Lass uns das auf morgen verschieben.",
+        "Ich bin zu schüchtern für die Kamera. Ich mag es lieber, wenn wir schreiben.",
+        "Mein Glaube erlaubt mir keine Videoanrufe.",
+        "Ich bin gerade bei meiner Familie, hier kann ich nicht ungestört per Video telefonieren.",
+        "Der Treiber für meine Kamera muss aktualisiert werden, das dauert ewig.",
+        "Lass uns erst eine tiefere Verbindung aufbauen, bevor wir uns per Video sehen.",
+        "Ich habe gerade eine schlimme Erkältung, ich will nicht, dass du mich so siehst.",
+        "Die Sicherheitssoftware meiner Firma blockiert alle Video-Ports.",
+        "Ich bin nicht der Typ, der sich gerne selbst auf dem Bildschirm sieht.",
+        "Meine Haare sind eine Katastrophe!",
+        "Es ist schon dunkel hier, das Licht ist zu schlecht.",
+        "Ich habe nur mein Handy und die Frontkamera ist gesprungen.",
+        "Vielleicht ein andermal, ich fühle mich gerade nicht danach.",
+        "Ich finde, unsere Stimmen am Telefon zu hören, ist viel intimer.",
+        "Ich bin in einem öffentlichen WLAN, das ist zu unsicher für Video.",
+        "Meine Religion verbietet die Abbildung von Personen.",
+        "Lass uns das geheimnisvoll halten. Die Vorfreude ist doch das Schönste.",
+        "Gerade ist mein Bildschirm schwarz, keine Ahnung warum.",
+        "Oh nein, Zoom funktioniert bei mir einfach nie!",
+        "Das Mikro ist okay, aber das Bild geht schon wieder nicht.",
+        "Ich habe eine Panikattacke, wenn ich mich selbst auf Video sehe.",
+        "Sorry, das Licht ist so schlecht, du würdest eh nichts erkennen."
+      ],
+      "tags": [
+        "webcam",
+        "excuse",
+        "ausrede",
+        "identität",
+        "catfishing"
+      ],
+      "composed_of": [
+        "ATO_PLACEHOLDER"
+      ]
+    },
+    "needs_manual_review": true
+  },
+  {
+    "file": "SEM_WEBCAM_EXCUSE_MARKER.yaml",
+    "id": "SEM_WEBCAM_EXCUSE",
+    "old": {
+      "id": "SEM_WEBCAM_EXCUSE",
+      "frame": {
+        "signal": [
+          "Ausrede für fehlenden Videoanruf",
+          "Vermeidung visueller Verifikation",
+          "technische/persönliche Hinderungsgründe"
+        ],
+        "concept": "Identitätsverschleierung, Kontaktvermeidung",
+        "pragmatics": "Schutz vor Enttarnung, Aufrechterhaltung einer Fiktion",
+        "narrative": "Strategische Hinderungsgründe für fehlende Verifikation"
+      },
+      "activation": {
+        "rule": "ANY 1"
+      },
+      "examples": [
+        "Ich würde ja gerne, aber ich bin auf einer Militärbasis und Kameras sind hier streng verboten.",
+        "Mein Laptop ist alt und die Webcam hat schon vor Jahren den Geist aufgegeben.",
+        "Die Internetverbindung auf dieser Ölplattform ist zu schlecht für ein Videotelefonat.",
+        "Ich sehe heute schrecklich aus, habe kaum geschlafen. Lass uns das auf morgen verschieben.",
+        "Ich bin zu schüchtern für die Kamera. Ich mag es lieber, wenn wir schreiben.",
+        "Mein Glaube erlaubt mir keine Videoanrufe.",
+        "Ich bin gerade bei meiner Familie, hier kann ich nicht ungestört per Video telefonieren.",
+        "Der Treiber für meine Kamera muss aktualisiert werden, das dauert ewig.",
+        "Lass uns erst eine tiefere Verbindung aufbauen, bevor wir uns per Video sehen.",
+        "Ich habe gerade eine schlimme Erkältung, ich will nicht, dass du mich so siehst.",
+        "Die Sicherheitssoftware meiner Firma blockiert alle Video-Ports.",
+        "Ich bin nicht der Typ, der sich gerne selbst auf dem Bildschirm sieht.",
+        "Meine Haare sind eine Katastrophe!",
+        "Es ist schon dunkel hier, das Licht ist zu schlecht.",
+        "Ich habe nur mein Handy und die Frontkamera ist gesprungen.",
+        "Vielleicht ein andermal, ich fühle mich gerade nicht danach.",
+        "Ich finde, unsere Stimmen am Telefon zu hören, ist viel intimer.",
+        "Ich bin in einem öffentlichen WLAN, das ist zu unsicher für Video.",
+        "Meine Religion verbietet die Abbildung von Personen.",
+        "Lass uns das geheimnisvoll halten. Die Vorfreude ist doch das Schönste.",
+        "Gerade ist mein Bildschirm schwarz, keine Ahnung warum.",
+        "Oh nein, Zoom funktioniert bei mir einfach nie!",
+        "Das Mikro ist okay, aber das Bild geht schon wieder nicht.",
+        "Ich habe eine Panikattacke, wenn ich mich selbst auf Video sehe.",
+        "Sorry, das Licht ist so schlecht, du würdest eh nichts erkennen."
+      ],
+      "tags": [
+        "webcam",
+        "excuse",
+        "ausrede",
+        "identität",
+        "catfishing"
+      ],
+      "composed_of": [
+        "ATO_PLACEHOLDER"
+      ]
+    },
+    "new": {
+      "id": "SEM_WEBCAM_EXCUSE",
+      "frame": {
+        "signal": [
+          "Ausrede für fehlenden Videoanruf",
+          "Vermeidung visueller Verifikation",
+          "technische/persönliche Hinderungsgründe"
+        ],
+        "concept": "Identitätsverschleierung-Feature",
+        "pragmatics": "Schutz vor Enttarnung, Aufrechterhaltung einer Fiktion",
+        "narrative": "Strategische Hinderungsgründe für fehlende Verifikation"
+      },
+      "activation": {
+        "rule": "ANY 1"
+      },
+      "examples": [
+        "Ich würde ja gerne, aber ich bin auf einer Militärbasis und Kameras sind hier streng verboten.",
+        "Mein Laptop ist alt und die Webcam hat schon vor Jahren den Geist aufgegeben.",
+        "Die Internetverbindung auf dieser Ölplattform ist zu schlecht für ein Videotelefonat.",
+        "Ich sehe heute schrecklich aus, habe kaum geschlafen. Lass uns das auf morgen verschieben.",
+        "Ich bin zu schüchtern für die Kamera. Ich mag es lieber, wenn wir schreiben.",
+        "Mein Glaube erlaubt mir keine Videoanrufe.",
+        "Ich bin gerade bei meiner Familie, hier kann ich nicht ungestört per Video telefonieren.",
+        "Der Treiber für meine Kamera muss aktualisiert werden, das dauert ewig.",
+        "Lass uns erst eine tiefere Verbindung aufbauen, bevor wir uns per Video sehen.",
+        "Ich habe gerade eine schlimme Erkältung, ich will nicht, dass du mich so siehst.",
+        "Die Sicherheitssoftware meiner Firma blockiert alle Video-Ports.",
+        "Ich bin nicht der Typ, der sich gerne selbst auf dem Bildschirm sieht.",
+        "Meine Haare sind eine Katastrophe!",
+        "Es ist schon dunkel hier, das Licht ist zu schlecht.",
+        "Ich habe nur mein Handy und die Frontkamera ist gesprungen.",
+        "Vielleicht ein andermal, ich fühle mich gerade nicht danach.",
+        "Ich finde, unsere Stimmen am Telefon zu hören, ist viel intimer.",
+        "Ich bin in einem öffentlichen WLAN, das ist zu unsicher für Video.",
+        "Meine Religion verbietet die Abbildung von Personen.",
+        "Lass uns das geheimnisvoll halten. Die Vorfreude ist doch das Schönste.",
+        "Gerade ist mein Bildschirm schwarz, keine Ahnung warum.",
+        "Oh nein, Zoom funktioniert bei mir einfach nie!",
+        "Das Mikro ist okay, aber das Bild geht schon wieder nicht.",
+        "Ich habe eine Panikattacke, wenn ich mich selbst auf Video sehe.",
+        "Sorry, das Licht ist so schlecht, du würdest eh nichts erkennen."
+      ],
+      "tags": [
+        "webcam",
+        "excuse",
+        "ausrede",
+        "identität",
+        "catfishing"
+      ],
+      "composed_of": [
+        "ATO_PLACEHOLDER"
+      ]
+    },
+    "needs_manual_review": true
+  }
+]

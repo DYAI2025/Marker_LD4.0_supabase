@@ -6,7 +6,7 @@ frame:
   - Was ist, wenn du mich verlässt?
   - Ich fühle mich allein gelassen
   - Ich kann nicht ohne dich sein
-  concept: loss and attachment anxiety
+  concept: Relational-Pattern
   pragmatics: anxiety expression
   narrative: emotional bonding dynamics
 pattern:
@@ -27,4 +27,3 @@ examples:
 - Ich vermiss dich total. Wie ist es bei dir? Denkst du an mich?
 tags:
 - anxiety
-- attachment

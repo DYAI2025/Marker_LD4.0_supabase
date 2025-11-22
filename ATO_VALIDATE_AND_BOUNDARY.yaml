@@ -5,7 +5,7 @@ frame:
   signal:
   - Gefühl anerkennen + eigene Grenze klar benennen
   concept: Würdigen & begrenzen
-  pragmatics: Verbindung halten, Überforderung vermeiden
+  pragmatics: Halten-Feature
   narrative: Respekt in beide Richtungen
 pattern:
 - (?i)\bich\s+verstehe\s+dich\b.*\b(und|aber)\b.*\b(meine\s+grenze|ich\s+brauche\s+abstand)\b
@@ -15,7 +15,6 @@ examples:
   positive: []
   negative: []
 tags:
-- validation
 - boundary
 - atomic
 class: ATO_VALIDATE_AND_BOUNDARY

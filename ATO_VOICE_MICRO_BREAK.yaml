@@ -7,7 +7,7 @@ frame:
   - incomplete sentence
   - sudden cut-off
   concept: self-interruption
-  pragmatics: inhibition / shame cue
+  pragmatics: Self-Conscious Affect
   narrative: halt
 pattern:
 - (…$)
@@ -19,16 +19,16 @@ scoring:
   weight: 1.0
 examples:
   positive:
-    - "Ich wollte sagen... (bricht ab)"
-    - "Das ist aber... (Satzende)"
-    - "Ich fühle mich gerade... (bricht ab)"
-    - "Ich habe da ein Problem... (Satzende)"
-    - "Ich wollte dich fragen... (bricht ab)"
-    - "Das ist aber... (Satzende)"
-    - "Ich habe da etwas beobachtet... (bricht ab)"
-    - "Ich habe da eine Sorge... (Satzende)"
-    - "Ich wollte dir etwas erzählen... (bricht ab)"
-    - "Ich habe da einen Gedanken... (Satzende)"
+  - Ich wollte sagen... (bricht ab)
+  - Das ist aber... (Satzende)
+  - Ich fühle mich gerade... (bricht ab)
+  - Ich habe da ein Problem... (Satzende)
+  - Ich wollte dich fragen... (bricht ab)
+  - Das ist aber... (Satzende)
+  - Ich habe da etwas beobachtet... (bricht ab)
+  - Ich habe da eine Sorge... (Satzende)
+  - Ich wollte dir etwas erzählen... (bricht ab)
+  - Ich habe da einen Gedanken... (Satzende)
   negative: []
 tags:
 - atomic
