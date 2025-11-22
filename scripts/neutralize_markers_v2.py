@@ -158,12 +158,14 @@ def map_from_seed(text: str) -> str:
         if key.lower() == text.lower():
             return value
 
-    # Try partial match (key contained in text)
-    for key, value in SEED_MAP.items():
-        if key.lower() in text.lower():
-            return value
-
-    return None
+    return next(
+        (
+            value
+            for key, value in SEED_MAP.items()
+            if key.lower() in text.lower()
+        ),
+        None,
+    )
 
 
 def neutralize_string(text: str) -> str:
