@@ -30,7 +30,7 @@ The following categories of terms were systematically removed from all marker me
 - toxic/toxicity, neediness/needy, manipulativ/manipulation
 
 ### Emotional/Diagnostic Labels
-- Schuld/guilt, Overwhelm/überwältigung, shame/Scham
+- Schuld/guilt, Overwhelm/Überwältigung, shame/Scham
 - attachment, avoidance/avoidant, validation, trauma
 
 ### Clinical Diagnoses
